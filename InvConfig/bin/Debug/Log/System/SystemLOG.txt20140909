@@ -1,0 +1,95 @@
+2014-09-09 22:30:53,649 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:31:04,876 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:31:13,522 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:31:21,375 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:31:55,547 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:35:43,008 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:36:24,010 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:37:59,083 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:38:09,929 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:42:22,398 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:42:43,841 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:47:53,851 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:48:30,434 ERROR [InvConfig.Presenters.Presenter`1] ListUserInvest Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.ListUserInvest() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 728
+2014-09-09 22:48:32,834 ERROR [InvConfig.Presenters.Presenter`1] TestConnection Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.TestConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 391
+2014-09-09 22:48:33,714 ERROR [InvConfig.Presenters.Presenter`1] TestConnection Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.TestConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 391
+2014-09-09 22:48:33,903 ERROR [InvConfig.Presenters.Presenter`1] TestConnection Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.TestConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 391
+2014-09-09 22:48:49,957 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:49:44,255 ERROR [InvConfig.Presenters.Presenter`1] _bwListUserInvest_DoWork Cannot query on specific query: SELECT * FROM INVEST.USER WHERE ACTIVEFLAG = 'A' AND (ISSUSPENDED <> 'Y' OR ISSUSPENDED IS NULL)
+System.ApplicationException: Cannot query on specific query: SELECT * FROM INVEST.USER WHERE ACTIVEFLAG = 'A' AND (ISSUSPENDED <> 'Y' OR ISSUSPENDED IS NULL)
+   at InvConfig.Models.DBConnect.RetrieveData(String p_Query) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 235
+   at InvConfig.Presenters.InvConfigPresenter._bwListUserInvest_DoWork(Object sender, DoWorkEventArgs e) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 767
+2014-09-09 22:50:26,330 ERROR [InvConfig.Presenters.Presenter`1] OpenLocalPath Path not found !!!
+System.ApplicationException: Path not found !!!
+   at Helpers.Files.FileHelper.OpenWindowsExplorer(String p_Path) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\File\FileHelper.cs:line 22
+   at InvConfig.Presenters.InvConfigPresenter.OpenLocalPath() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 357
+2014-09-09 22:50:29,305 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:51:46,855 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:51:55,310 ERROR [InvConfig.Presenters.Presenter`1] GetUserInvestInfo Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at InvConfig.Views.InvConfigForm.get_UserInvest() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 475
+   at InvConfig.Presenters.InvConfigPresenter.GetUserInvestInfo() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 823
+2014-09-09 22:52:01,196 ERROR [InvConfig.Presenters.Presenter`1] TestConnection Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.TestConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 391
+2014-09-09 22:52:02,026 ERROR [InvConfig.Presenters.Presenter`1] TestConnection Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.TestConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 391
+2014-09-09 22:52:02,965 ERROR [InvConfig.Presenters.Presenter`1] TestConnection Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.TestConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 391
+2014-09-09 22:52:49,168 ERROR [InvConfig.Presenters.Presenter`1] GetUserInvestInfo Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at InvConfig.Views.InvConfigForm.get_UserInvest() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 475
+   at InvConfig.Presenters.InvConfigPresenter.GetUserInvestInfo() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 823
+2014-09-09 22:52:59,614 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:56:46,310 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 620
+2014-09-09 22:57:44,709 ERROR [InvConfig.Presenters.Presenter`1] ListUserInvest Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.ListUserInvest() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 728
+2014-09-09 22:58:06,196 ERROR [InvConfig.Presenters.Presenter`1] _bwListUserInvest_DoWork Cannot query on specific query: SELECT * FROM INVEST.USER WHERE ACTIVEFLAG = 'A' AND (ISSUSPENDED <> 'Y' OR ISSUSPENDED IS NULL)
+System.ApplicationException: Cannot query on specific query: SELECT * FROM INVEST.USER WHERE ACTIVEFLAG = 'A' AND (ISSUSPENDED <> 'Y' OR ISSUSPENDED IS NULL)
+   at InvConfig.Models.DBConnect.RetrieveData(String p_Query) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 235
+   at InvConfig.Presenters.InvConfigPresenter._bwListUserInvest_DoWork(Object sender, DoWorkEventArgs e) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 767

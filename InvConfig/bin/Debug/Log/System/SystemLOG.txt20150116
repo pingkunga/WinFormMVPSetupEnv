@@ -1,0 +1,166 @@
+2015-01-17 00:00:26,587 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 689
+2015-01-17 00:11:21,182 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 689
+2015-01-17 00:13:17,996 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 689
+2015-01-17 00:20:30,537 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 691
+2015-01-17 00:35:26,126 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 691
+2015-01-17 00:41:13,363 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 691
+2015-01-17 00:42:53,803 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 695
+2015-01-17 00:50:38,592 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 698
+2015-01-17 00:54:12,643 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 698
+2015-01-17 00:55:43,106 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 698
+2015-01-17 00:56:19,576 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 698
+2015-01-17 01:04:07,739 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 698
+2015-01-17 01:04:42,418 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 698
+2015-01-17 01:06:46,180 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 698
+2015-01-17 01:14:48,430 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 698
+2015-01-17 01:15:25,612 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 698
+2015-01-17 01:47:01,654 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 698
+2015-01-17 01:52:33,982 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 705
+2015-01-17 01:53:09,202 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 705
+2015-01-17 01:54:50,029 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 711
+2015-01-17 01:57:34,329 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 712
+2015-01-17 01:58:09,094 WARN [InvConfig.Presenters.Presenter`1] ShowWinPassword 
+2015-01-17 01:58:15,360 WARN [InvConfig.Presenters.Presenter`1] ShowWinPassword 
+2015-01-17 01:58:23,671 ERROR [InvConfig.Presenters.Presenter`1] OpenLocalPath Path not found !!!
+System.ApplicationException: Path not found !!!
+   at Helpers.Files.FileHelper.OpenWindowsExplorer(String p_Path) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\File\FileHelper.cs:line 22
+   at InvConfig.Presenters.InvConfigPresenter.OpenLocalPath() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 402
+2015-01-17 01:58:24,192 ERROR [InvConfig.Presenters.Presenter`1] OpenLocalPath Path not found !!!
+System.ApplicationException: Path not found !!!
+   at Helpers.Files.FileHelper.OpenWindowsExplorer(String p_Path) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\File\FileHelper.cs:line 22
+   at InvConfig.Presenters.InvConfigPresenter.OpenLocalPath() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 402
+2015-01-17 01:58:24,524 ERROR [InvConfig.Presenters.Presenter`1] OpenLocalPath Path not found !!!
+System.ApplicationException: Path not found !!!
+   at Helpers.Files.FileHelper.OpenWindowsExplorer(String p_Path) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\File\FileHelper.cs:line 22
+   at InvConfig.Presenters.InvConfigPresenter.OpenLocalPath() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 402
+2015-01-17 01:58:28,963 ERROR [InvConfig.Presenters.Presenter`1] OpenServerPath Path not found !!!
+System.ApplicationException: Path not found !!!
+   at Helpers.Files.FileHelper.OpenWindowsExplorer(String p_Path) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\File\FileHelper.cs:line 22
+   at InvConfig.Presenters.InvConfigPresenter.OpenServerPath() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 415
+2015-01-17 01:58:37,110 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 712
+2015-01-17 01:58:39,178 WARN [InvConfig.Presenters.Presenter`1] ShowWinPassword 
+2015-01-17 01:58:40,475 WARN [InvConfig.Presenters.Presenter`1] ShowWinPassword 
+2015-01-17 01:59:11,559 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 712
+2015-01-17 02:00:50,241 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 712
+2015-01-17 02:02:23,634 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 709
+2015-01-17 02:02:28,345 WARN [InvConfig.Presenters.Presenter`1] ShowWinPassword 
+2015-01-17 02:06:45,831 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 709
+2015-01-17 02:11:30,060 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 709
+2015-01-17 02:13:47,783 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 709
+2015-01-17 02:15:14,730 ERROR [InvConfig.Presenters.Presenter`1] OpenLocalPath Path not found !!!
+System.ApplicationException: Path not found !!!
+   at Helpers.Files.FileHelper.OpenWindowsExplorer(String p_Path) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\File\FileHelper.cs:line 22
+   at InvConfig.Presenters.InvConfigPresenter.OpenLocalPath() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 402
+2015-01-17 02:17:55,397 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 709
+2015-01-17 02:25:39,524 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 714
+2015-01-17 02:27:55,623 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 722
+2015-01-17 02:27:57,447 ERROR [InvConfig.Presenters.Presenter`1] ValidateConfig The system cannot find the file specified
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at InvConfig.Presenters.InvConfigPresenter.ValidateConfig() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 379
+2015-01-17 02:28:05,020 ERROR [InvConfig.Presenters.Presenter`1] ValidateConfig The system cannot find the file specified
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at InvConfig.Presenters.InvConfigPresenter.ValidateConfig() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 379
+2015-01-17 02:28:07,553 ERROR [InvConfig.Presenters.Presenter`1] OpenServerPath Path not found !!!
+System.ApplicationException: Path not found !!!
+   at Helpers.Files.FileHelper.OpenWindowsExplorer(String p_Path) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\File\FileHelper.cs:line 22
+   at InvConfig.Presenters.InvConfigPresenter.OpenServerPath() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 428
+2015-01-17 02:28:09,111 ERROR [InvConfig.Presenters.Presenter`1] ValidateConfig The system cannot find the file specified
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at InvConfig.Presenters.InvConfigPresenter.ValidateConfig() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 379
+2015-01-17 02:29:17,262 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 722
+2015-01-17 02:29:19,428 ERROR [InvConfig.Presenters.Presenter`1] ValidateConfig The system cannot find the file specified
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at InvConfig.Presenters.InvConfigPresenter.ValidateConfig() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 379
+2015-01-17 02:33:09,360 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 722
+2015-01-17 02:36:57,873 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 722
+2015-01-17 02:37:46,057 ERROR [InvConfig.Presenters.Presenter`1] ValidateConfig The system cannot find the file specified
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at InvConfig.Presenters.InvConfigPresenter.ValidateConfig() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 379

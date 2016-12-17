@@ -1,0 +1,9 @@
+=======START PROCESS [Execute script for QA] =======
+>> Create a connection [ADMINPINGNB\MSSQL2008R2:CTD_KTBCS]
+>> No make change on DB
+**************************************************
+>> Start Generate Script Process
+>> Path not found !!! in Generate Script Path
+**************************************************
+>> Closed a connection
+========END PROCESS [Execute script by script number]  ========

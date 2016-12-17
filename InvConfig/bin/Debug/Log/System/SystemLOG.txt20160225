@@ -1,0 +1,3 @@
+2016-02-25 14:55:03,502 ERROR [InvConfig.Presenters.Presenter`1] ListUserInvest Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.ListUserInvest() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 830

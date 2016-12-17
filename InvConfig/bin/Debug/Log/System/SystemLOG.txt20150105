@@ -1,0 +1,12 @@
+2015-01-05 23:10:28,279 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 673
+2015-01-05 23:10:28,449 WARN [InvConfig.Presenters.Presenter`1] OnViewInitialize Cannot get specific enviroment config from database file.
+2015-01-05 23:10:57,970 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 673
+2015-01-05 23:10:58,001 WARN [InvConfig.Presenters.Presenter`1] OnViewInitialize Cannot get specific enviroment config from database file.
+2015-01-05 23:11:05,665 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 673
+2015-01-05 23:11:05,698 WARN [InvConfig.Presenters.Presenter`1] OnViewInitialize Cannot get specific enviroment config from database file.

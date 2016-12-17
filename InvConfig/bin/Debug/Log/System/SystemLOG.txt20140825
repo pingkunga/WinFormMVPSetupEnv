@@ -1,0 +1,20 @@
+2014-08-25 00:00:02,629 ERROR [InvConfig.Presenters.Presenter`1] _bwTestConnection_DoWork PROVIDER NOT FOUND
+System.Exception: PROVIDER NOT FOUND
+   at InvConfig.Models.DBConnect.GetConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 82
+   at InvConfig.Models.DBConnect.TestConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 118
+   at InvConfig.Presenters.InvConfigPresenter._bwTestConnection_DoWork(Object sender, DoWorkEventArgs e) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 350
+2014-08-25 00:00:03,246 ERROR [InvConfig.Presenters.Presenter`1] _bwTestConnection_DoWork PROVIDER NOT FOUND
+System.Exception: PROVIDER NOT FOUND
+   at InvConfig.Models.DBConnect.GetConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 82
+   at InvConfig.Models.DBConnect.TestConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 118
+   at InvConfig.Presenters.InvConfigPresenter._bwTestConnection_DoWork(Object sender, DoWorkEventArgs e) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 350
+2014-08-25 00:00:03,711 ERROR [InvConfig.Presenters.Presenter`1] _bwTestConnection_DoWork PROVIDER NOT FOUND
+System.Exception: PROVIDER NOT FOUND
+   at InvConfig.Models.DBConnect.GetConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 82
+   at InvConfig.Models.DBConnect.TestConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 118
+   at InvConfig.Presenters.InvConfigPresenter._bwTestConnection_DoWork(Object sender, DoWorkEventArgs e) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 350
+2014-08-25 00:00:03,903 ERROR [InvConfig.Presenters.Presenter`1] _bwTestConnection_DoWork PROVIDER NOT FOUND
+System.Exception: PROVIDER NOT FOUND
+   at InvConfig.Models.DBConnect.GetConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 82
+   at InvConfig.Models.DBConnect.TestConnection() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 118
+   at InvConfig.Presenters.InvConfigPresenter._bwTestConnection_DoWork(Object sender, DoWorkEventArgs e) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 350

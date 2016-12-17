@@ -1,0 +1,6 @@
+2016-08-25 09:53:16,827 ERROR [InvConfig.Presenters.Presenter`1] TestConnection Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.TestConnection() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 449
+2016-08-25 09:53:20,902 ERROR [InvConfig.Presenters.Presenter`1] TestConnection Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.TestConnection() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 449

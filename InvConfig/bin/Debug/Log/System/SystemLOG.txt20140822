@@ -1,0 +1,9 @@
+2014-08-22 00:01:39,081 WARN [InvConfig.Presenters.Presenter`1] OnViewInitialize Cannot get specific enviroment config from database file.
+System.ApplicationException: Cannot get specific enviroment config from database file.
+   at InvConfig.Models.InvConfigMapper.GetInvConfigByIDAndName(Int32 p_ConfigID, String p_ConfigName) in C:\Users\Chatr_000\Desktop\Refactor\Refactor20140821\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 104
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor20140821\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 93
+2014-08-22 16:57:46,148 WARN [InvConfig.Presenters.Presenter`1] OnViewInitialize Cannot get specific enviroment config from database file.
+System.ApplicationException: Cannot get specific enviroment config from database file.
+   at InvConfig.Models.InvConfigMapper.GetInvConfigByIDAndName(Int32 p_ConfigID, String p_ConfigName) in C:\Users\Chatr_000\Desktop\Refactor\Refactor20140821\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 104
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor20140821\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 93
+2014-08-22 17:18:45,787 WARN [InvConfig.Presenters.Presenter`1] OnViewInitialize Cannot get specific enviroment config from database file.

@@ -1,0 +1,60 @@
+update portfolio 
+set portfoliocode = 'Portfolio-' + cast(portfolioid as char)
+,portfoliodesc = 'Portfolio-' + cast(portfolioid as char)
+,portfolioname2 = 'Portfolio-' + cast(portfolioid as char);
+
+update portfoliogroup
+set portfoliogroupcode = 'Portfolio Group-' + cast(portfoliogroupid as char)
+,portfoliogroupdesc = 'Portfolio Group-' + cast(portfoliogroupid as char)
+,portfoliogroupname = 'Portfolio Group-' + cast(portfoliogroupid as char);
+
+update security 
+set securitycode = 'FD-' + cast(securityid as char)
+,securitydesc =  'FD-' + cast(securityid as char)
+,securitydesc2 =  'FD-' + cast(securityid as char)
+where SECURITYID in (
+select securityid
+from SECURITY s
+inner join SECURITYTYPE st on st.SECURITYTYPEID = s.SECURITYTYPEID and st.ACTIVEFLAG = 'A'
+inner join INVESTMENT i on i.INVESTMENTID = st.INVESTMENTID and i.ACTIVEFLAG = 'A'
+where i.INTERNALCODE = 'FIXDEPOSIT'
+);
+
+update security 
+set securitycode = 'PN-' + cast(securityid as char)
+,securitydesc =  'PN-' + cast(securityid as char)
+,securitydesc2 =  'PN-' + cast(securityid as char)
+where SECURITYID in (
+select securityid
+from SECURITY s
+inner join SECURITYTYPE st on st.SECURITYTYPEID = s.SECURITYTYPEID and st.ACTIVEFLAG = 'A'
+inner join INVESTMENT i on i.INVESTMENTID = st.INVESTMENTID and i.ACTIVEFLAG = 'A'
+where i.INTERNALCODE = 'PN'
+);
+
+update security 
+set securitycode = 'NCD-' + cast(securityid as char)
+,securitydesc =  'NCD-' + cast(securityid as char)
+,securitydesc2 =  'NCD-' + cast(securityid as char)
+where SECURITYID in (
+select securityid
+from SECURITY s
+inner join SECURITYTYPE st on st.SECURITYTYPEID = s.SECURITYTYPEID and st.ACTIVEFLAG = 'A'
+inner join INVESTMENT i on i.INVESTMENTID = st.INVESTMENTID and i.ACTIVEFLAG = 'A'
+where i.INTERNALCODE = 'NCD'
+);
+
+update security 
+set securitycode = 'BE-' + cast(securityid as char)
+,securitydesc =  'BE-' + cast(securityid as char)
+,securitydesc2 =  'BE-' + cast(securityid as char)
+where SECURITYID in (
+select securityid
+from SECURITY s
+inner join SECURITYTYPE st on st.SECURITYTYPEID = s.SECURITYTYPEID and st.ACTIVEFLAG = 'A'
+inner join INVESTMENT i on i.INVESTMENTID = st.INVESTMENTID and i.ACTIVEFLAG = 'A'
+where i.INTERNALCODE = 'BE'
+);
+
+update BANKACCOUNT
+set BANKACCOUNTNO = 'BANKACC-' + BANKACCOUNTID;

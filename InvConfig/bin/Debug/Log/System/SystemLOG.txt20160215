@@ -1,0 +1,4 @@
+2016-02-15 10:28:02,200 ERROR [InvConfig.Presenters.Presenter`1] _bwListUserInvest_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwListUserInvest_DoWork(Object sender, DoWorkEventArgs e) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 861

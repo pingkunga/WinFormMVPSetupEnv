@@ -1,0 +1,11 @@
+2015-08-15 08:58:44,782 ERROR [InvConfig.Presenters.Presenter`1] ListUserInvest Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.ListUserInvest() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 830
+2015-08-15 08:58:45,142 ERROR [InvConfig.Presenters.Presenter`1] _bwListUserInvest_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwListUserInvest_DoWork(Object sender, DoWorkEventArgs e) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 861
+2015-08-15 08:58:56,102 ERROR [InvConfig.Presenters.Presenter`1] _bwListUserInvest_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwListUserInvest_DoWork(Object sender, DoWorkEventArgs e) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 861

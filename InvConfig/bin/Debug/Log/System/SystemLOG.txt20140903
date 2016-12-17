@@ -1,0 +1,368 @@
+2014-09-03 00:36:37,531 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 00:43:18,261 ERROR [InvConfig.Presenters.Presenter`1] OnViewInitialize Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+System.ArgumentException: Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RtFieldInfo.UnsafeSetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture)
+   at System.Runtime.Serialization.FormatterServices.SerializationSetValue(MemberInfo fi, Object target, Object value)
+   at System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(Object obj, MemberInfo[] members, Object[] data)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.ParseObjectEnd(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Parse(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.__BinaryParser.Run()
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Deserialize(HeaderHandler handler, __BinaryParser serParser, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream, HeaderHandler handler, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at InvConfig.Models.InvConfigMapper.GetAllInvConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 80
+   at InvConfig.Models.InvConfigMapper.GetInvConfigByIDAndName(Int32 p_ConfigID, String p_ConfigName) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 101
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 107
+2014-09-03 00:43:38,834 ERROR [InvConfig.Presenters.Presenter`1] OnViewInitialize Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+System.ArgumentException: Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RtFieldInfo.UnsafeSetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture)
+   at System.Runtime.Serialization.FormatterServices.SerializationSetValue(MemberInfo fi, Object target, Object value)
+   at System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(Object obj, MemberInfo[] members, Object[] data)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.ParseObjectEnd(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Parse(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.__BinaryParser.Run()
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Deserialize(HeaderHandler handler, __BinaryParser serParser, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream, HeaderHandler handler, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at InvConfig.Models.InvConfigMapper.GetAllInvConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 80
+   at InvConfig.Models.InvConfigMapper.GetInvConfigByIDAndName(Int32 p_ConfigID, String p_ConfigName) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 101
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 107
+2014-09-03 00:43:48,865 ERROR [InvConfig.Presenters.Presenter`1] OnViewInitialize Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+System.ArgumentException: Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RtFieldInfo.UnsafeSetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture)
+   at System.Runtime.Serialization.FormatterServices.SerializationSetValue(MemberInfo fi, Object target, Object value)
+   at System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(Object obj, MemberInfo[] members, Object[] data)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.ParseObjectEnd(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Parse(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.__BinaryParser.Run()
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Deserialize(HeaderHandler handler, __BinaryParser serParser, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream, HeaderHandler handler, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at InvConfig.Models.InvConfigMapper.GetAllInvConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 80
+   at InvConfig.Models.InvConfigMapper.GetInvConfigByIDAndName(Int32 p_ConfigID, String p_ConfigName) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 101
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 107
+2014-09-03 00:43:53,980 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 00:43:54,050 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 00:43:54,156 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 00:44:47,672 ERROR [InvConfig.Presenters.Presenter`1] OnViewInitialize Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+System.ArgumentException: Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RtFieldInfo.UnsafeSetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture)
+   at System.Runtime.Serialization.FormatterServices.SerializationSetValue(MemberInfo fi, Object target, Object value)
+   at System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(Object obj, MemberInfo[] members, Object[] data)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.ParseObjectEnd(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Parse(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.__BinaryParser.Run()
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Deserialize(HeaderHandler handler, __BinaryParser serParser, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream, HeaderHandler handler, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at InvConfig.Models.InvConfigMapper.GetAllInvConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 80
+   at InvConfig.Models.InvConfigMapper.GetInvConfigByIDAndName(Int32 p_ConfigID, String p_ConfigName) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 101
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 107
+2014-09-03 00:44:56,099 ERROR [InvConfig.Presenters.Presenter`1] OnViewInitialize Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+System.ArgumentException: Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RtFieldInfo.UnsafeSetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture)
+   at System.Runtime.Serialization.FormatterServices.SerializationSetValue(MemberInfo fi, Object target, Object value)
+   at System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(Object obj, MemberInfo[] members, Object[] data)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.ParseObjectEnd(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Parse(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.__BinaryParser.Run()
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Deserialize(HeaderHandler handler, __BinaryParser serParser, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream, HeaderHandler handler, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at InvConfig.Models.InvConfigMapper.GetAllInvConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 80
+   at InvConfig.Models.InvConfigMapper.GetInvConfigByIDAndName(Int32 p_ConfigID, String p_ConfigName) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 101
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 107
+2014-09-03 00:45:08,506 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 06:47:04,370 ERROR [InvConfig.Presenters.Presenter`1] OnViewInitialize Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+System.ArgumentException: Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RtFieldInfo.UnsafeSetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture)
+   at System.Runtime.Serialization.FormatterServices.SerializationSetValue(MemberInfo fi, Object target, Object value)
+   at System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(Object obj, MemberInfo[] members, Object[] data)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.ParseObjectEnd(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Parse(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.__BinaryParser.Run()
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Deserialize(HeaderHandler handler, __BinaryParser serParser, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream, HeaderHandler handler, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at InvConfig.Models.InvConfigMapper.GetAllInvConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 80
+   at InvConfig.Models.InvConfigMapper.GetInvConfigByIDAndName(Int32 p_ConfigID, String p_ConfigName) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 101
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 107
+2014-09-03 06:47:26,707 ERROR [InvConfig.Presenters.Presenter`1] OnViewInitialize Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+System.ArgumentException: Object of type 'System.String' cannot be converted to type 'Microsoft.Win32.RegistryKey'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.RtFieldInfo.UnsafeSetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture)
+   at System.Runtime.Serialization.FormatterServices.SerializationSetValue(MemberInfo fi, Object target, Object value)
+   at System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(Object obj, MemberInfo[] members, Object[] data)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.ParseObjectEnd(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Parse(ParseRecord pr)
+   at System.Runtime.Serialization.Formatters.Binary.__BinaryParser.Run()
+   at System.Runtime.Serialization.Formatters.Binary.ObjectReader.Deserialize(HeaderHandler handler, __BinaryParser serParser, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream, HeaderHandler handler, Boolean fCheck, Boolean isCrossAppDomain, IMethodCallMessage methodCallMessage)
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at InvConfig.Models.InvConfigMapper.GetAllInvConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 80
+   at InvConfig.Models.InvConfigMapper.GetInvConfigByIDAndName(Int32 p_ConfigID, String p_ConfigName) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 101
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 107
+2014-09-03 07:25:24,661 ERROR [InvConfig.Presenters.Presenter`1] OnViewInitialize Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 107
+2014-09-03 07:26:29,424 ERROR [InvConfig.Presenters.Presenter`1] OnViewInitialize Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 107
+2014-09-03 07:26:37,766 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:26:37,849 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:26:48,679 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:26:48,717 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:26:54,472 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:26:54,516 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:26:58,591 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:26:58,635 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:27:07,565 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:27:07,608 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:27:11,029 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:27:11,075 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:27:44,806 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:28:21,499 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:28:47,163 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:31:50,836 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:32:07,654 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:33:49,668 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:33:54,229 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:34:54,612 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:37:04,237 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:37:04,300 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 229
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:37:08,792 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:37:08,832 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 229
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:37:14,157 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:37:14,188 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 229
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:37:35,522 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:37:39,597 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 229
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:37:59,633 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:38:02,807 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 229
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:38:46,346 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594
+2014-09-03 07:40:07,879 ERROR [InvConfig.Presenters.Presenter`1] ListConfig Value cannot be null.
+Parameter name: key
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Windows.Forms.CurrencyManager.Find(PropertyDescriptor property, Object key, Boolean keepIndex)
+   at System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   at InvConfig.Views.InvConfigForm.<>c__DisplayClass40.<set_BaseRegistryPath>b__3f() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 229
+   at Helpers.Controls.ControlHelper.InvokeIfRequired(ISynchronizeInvoke obj, MethodInvoker action) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Controls\ControlHelper.cs:line 21
+   at InvConfig.Views.InvConfigForm.set_BaseRegistryPath(String value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 226
+   at InvConfig.Presenters.InvConfigPresenter.set_ViewInvConfig(InvConfigModel value) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 70
+   at InvConfig.Presenters.InvConfigPresenter.ListConfig() in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 224
+2014-09-03 07:40:35,883 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in C:\Users\Chatr_000\Desktop\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 594

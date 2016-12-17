@@ -1,0 +1,14 @@
+2016-12-17 14:20:15,583 ERROR [InvConfig.Presenters.Presenter`1] ValidateConfig The system cannot find the file specified
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at InvConfig.Presenters.InvConfigPresenter.ValidateConfig() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 379
+2016-12-17 14:20:17,128 ERROR [InvConfig.Presenters.Presenter`1] ValidateConfig The system cannot find the file specified
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at InvConfig.Presenters.InvConfigPresenter.ValidateConfig() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 379

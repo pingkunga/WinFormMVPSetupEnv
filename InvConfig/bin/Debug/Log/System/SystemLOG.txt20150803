@@ -1,0 +1,39 @@
+2015-08-03 10:27:52,012 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 722
+2015-08-03 10:33:55,162 ERROR [InvConfig.Presenters.Presenter`1] GetUserInvestInfo Index and length must refer to a location within the string.
+Parameter name: length
+System.ArgumentOutOfRangeException: Index and length must refer to a location within the string.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Helpers.Cryptography.Rijndael.HexToBytes(String message) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Cryptography\RijndaelEncrypt.cs:line 754
+   at Helpers.Cryptography.Rijndael.DecryptData(String message, String initialisationVector, BlockSize blockSize, KeySize keySize, EncryptionMode cryptMode, Boolean messageAsHex) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Cryptography\RijndaelEncrypt.cs:line 695
+   at InvConfig.Presenters.InvConfigPresenter.GetUserInvestInfo() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 942
+2015-08-03 10:33:55,266 ERROR [InvConfig.Presenters.Presenter`1] GetUserInvestInfo Index and length must refer to a location within the string.
+Parameter name: length
+System.ArgumentOutOfRangeException: Index and length must refer to a location within the string.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Helpers.Cryptography.Rijndael.HexToBytes(String message) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Cryptography\RijndaelEncrypt.cs:line 754
+   at Helpers.Cryptography.Rijndael.DecryptData(String message, String initialisationVector, BlockSize blockSize, KeySize keySize, EncryptionMode cryptMode, Boolean messageAsHex) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Cryptography\RijndaelEncrypt.cs:line 695
+   at InvConfig.Presenters.InvConfigPresenter.GetUserInvestInfo() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 942
+2015-08-03 10:33:55,288 ERROR [InvConfig.Presenters.Presenter`1] GetUserInvestInfo Index and length must refer to a location within the string.
+Parameter name: length
+System.ArgumentOutOfRangeException: Index and length must refer to a location within the string.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Helpers.Cryptography.Rijndael.HexToBytes(String message) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Cryptography\RijndaelEncrypt.cs:line 754
+   at Helpers.Cryptography.Rijndael.DecryptData(String message, String initialisationVector, BlockSize blockSize, KeySize keySize, EncryptionMode cryptMode, Boolean messageAsHex) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Cryptography\RijndaelEncrypt.cs:line 695
+   at InvConfig.Presenters.InvConfigPresenter.GetUserInvestInfo() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 942
+2015-08-03 10:33:55,288 ERROR [InvConfig.Presenters.Presenter`1] GetUserInvestInfo Index and length must refer to a location within the string.
+Parameter name: length
+System.ArgumentOutOfRangeException: Index and length must refer to a location within the string.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Helpers.Cryptography.Rijndael.HexToBytes(String message) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Cryptography\RijndaelEncrypt.cs:line 754
+   at Helpers.Cryptography.Rijndael.DecryptData(String message, String initialisationVector, BlockSize blockSize, KeySize keySize, EncryptionMode cryptMode, Boolean messageAsHex) in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Helpers\Cryptography\RijndaelEncrypt.cs:line 695
+   at InvConfig.Presenters.InvConfigPresenter.GetUserInvestInfo() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 942
+2015-08-03 10:33:57,574 ERROR [InvConfig.Presenters.Presenter`1] GetUserInvestInfo Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at InvConfig.Views.InvConfigForm.get_UserInvest() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Views\InvConfigForm.cs:line 507
+   at InvConfig.Presenters.InvConfigPresenter.GetUserInvestInfo() in D:\12WMSL_Work\Refactor\Refactor\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 926

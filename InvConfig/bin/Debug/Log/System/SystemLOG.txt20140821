@@ -1,0 +1,8 @@
+2014-08-21 23:55:04,386 WARN [InvConfig.Presenters.Presenter`1] OnViewInitialize Cannot get specific enviroment config from database file.
+System.ApplicationException: Cannot get specific enviroment config from database file.
+   at InvConfig.Models.InvConfigMapper.GetInvConfigByIDAndName(Int32 p_ConfigID, String p_ConfigName) in C:\Users\Chatr_000\Desktop\Refactor\Refactor20140821\InvConfig\InvConfig\InvConfig\Models\InvConfigMapper.cs:line 104
+   at InvConfig.Presenters.InvConfigPresenter.OnViewInitialize() in C:\Users\Chatr_000\Desktop\Refactor\Refactor20140821\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 93
+2014-08-21 23:55:08,342 ERROR [InvConfig.Presenters.Presenter`1] OpenLocalPath Path not found !!!
+System.ApplicationException: Path not found !!!
+   at Helpers.Files.FileHelper.OpenWindowsExplorer(String p_Path) in C:\Users\Chatr_000\Desktop\Refactor\Refactor20140821\InvConfig\InvConfig\InvConfig\Helpers\File\FileHelper.cs:line 22
+   at InvConfig.Presenters.InvConfigPresenter.OpenLocalPath() in C:\Users\Chatr_000\Desktop\Refactor\Refactor20140821\InvConfig\InvConfig\InvConfig\Presenters\InvConfigPresenter.cs:line 260
