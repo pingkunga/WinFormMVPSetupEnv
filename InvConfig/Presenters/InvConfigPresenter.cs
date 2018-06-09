@@ -57,6 +57,8 @@ namespace InvConfig.Presenters
                 invConfigModel.bnzLastUpdateScript = configView.ScriptNumber;
                 invConfigModel.configRemark = configView.Remark;
                 invConfigModel.configBaseRegistry = configView.BaseRegistryPath;
+                invConfigModel.IsUpdateBUCProperties = configView.IsUpdateBUCProperties;
+
                 invConfigModel.bnzISNewEncryption = configView.ISNewEncryption;
                 invConfigModel.bnzWindowsUsername = configView.WindowsUsername;
                 invConfigModel.bnzWindowsPassword = configView.WindowsPassword; 
@@ -81,6 +83,8 @@ namespace InvConfig.Presenters
                 configView.ScriptNumber = value.bnzLastUpdateScript;
                 configView.Remark = value.configRemark;
                 configView.BaseRegistryPath = value.configBaseRegistry;
+                configView.IsUpdateBUCProperties = value.IsUpdateBUCProperties;
+
                 configView.ISNewEncryption = value.bnzISNewEncryption;
                 configView.WindowsUsername = value.bnzWindowsUsername;
                 configView.WindowsPassword = value.bnzWindowsPassword;
@@ -199,6 +203,8 @@ namespace InvConfig.Presenters
             this.configView.ShowWinPassword += ShowWinPassword;
             this.configView.StartService += StartService;
             this.configView.StopService += StopSerivce;
+
+            this.configView.OpenBUC += OpenBUC;
         }
         private void BindInvestRegEvent()
         {
@@ -570,13 +576,31 @@ namespace InvConfig.Presenters
             try
             {
                 WinPasswordPresenter winPasswordPresenter = new WinPasswordPresenter(new WinPasswordForm());
-                winPasswordPresenter.WindowsUsername = this.configView.WindowsUsername;
-                winPasswordPresenter.WindowsPassword = Rijndael.DecryptData(this.configView.WindowsPassword,
+
+                if (String.IsNullOrEmpty(this.configView.WindowsUsername))
+                {
+                    winPasswordPresenter.WindowsUsername = Properties.Resources.DefaultWinUsername;
+                }
+                else
+                {
+                    winPasswordPresenter.WindowsUsername = this.configView.WindowsUsername;
+                }
+
+                if (String.IsNullOrEmpty(this.configView.WindowsPassword))
+                {
+                    winPasswordPresenter.WindowsPassword = Properties.Resources.DefaultWinPassword;
+                }
+                else
+                {
+                    winPasswordPresenter.WindowsPassword = this.configView.WindowsPassword;
+                    winPasswordPresenter.WindowsPassword = Rijndael.DecryptData(winPasswordPresenter.WindowsPassword,
                                                                            "",
                                                                            Rijndael.BlockSize.Block256,
                                                                            Rijndael.KeySize.Key256,
                                                                            Rijndael.EncryptionMode.ModeECB,
                                                                            true);
+                }
+                
                 winPasswordPresenter.OnViewInitialize();
                 this.configView.WindowsUsername = winPasswordPresenter.WindowsUsername;
                 this.configView.WindowsPassword = Rijndael.EncryptData(winPasswordPresenter.WindowsPassword,
@@ -612,6 +636,26 @@ namespace InvConfig.Presenters
             {
                 log.Warn(ex.InnerException);
             }
+        }
+
+        private void OpenBUC()
+        {
+            //C:\Bonanza\BFM\Operation\Buc
+            //Check File Exist
+            string BUCPath = this.configView.LocalPath + "\\Operation\\Buc";
+            string BUCExePath = BUCPath + "\\Wmsl.Incubator.Configuration.UI.exe";
+            if (File.Exists(BUCExePath))
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.WorkingDirectory = BUCPath;
+                startInfo.FileName = "Wmsl.Incubator.Configuration.UI.exe";
+                Process.Start(startInfo);
+            }
+            else
+            {
+                this.configView.TabEnvConfigMsg = "Not found Wmsl.Incubator.Configuration.UI.exe in Path "+ BUCExePath;
+            }
+            
         }
         #endregion service
         #endregion Tab: Enviroment Config
@@ -869,10 +913,13 @@ namespace InvConfig.Presenters
                 #endregion GetQuery
                 using (DataTable userData = dbConnect.RetrieveData(sqlQuery))
                 {
+                    DataView userView = new DataView(userData);
+                    userView.Sort = "USERNAME ASC";
+
                     #region Convert Datatable to UserInvestModel
                     if (userData != null)
                     {
-                        foreach (DataRow userDataRow in userData.Rows)
+                        foreach (DataRowView userDataRow in userView)
                         {
                             UserInvestModel userInvest = new UserInvestModel();
                             userInvest.Username = (userDataRow["USERNAME"] == DBNull.Value) ? string.Empty : userDataRow["USERNAME"].ToString().Trim();

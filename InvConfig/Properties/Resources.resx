@@ -117,60 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ConstBnziServer" xml:space="preserve">
-    <value>Bonanza Interface Server</value>
-  </data>
-  <data name="ConstDB2" xml:space="preserve">
-    <value>DB2</value>
-  </data>
-  <data name="ConstExcel64Required" xml:space="preserve">
-    <value>C:\\Windows\\SysWOW64\\config\\systemprofile\\Desktop</value>
-    <comment>ใข้าสำหรับ Windows 64 Bit ที่มี Excel ติดตั้ง ต้องสร้าง Folder Temp</comment>
-  </data>
-  <data name="ConstListFileVersion" xml:space="preserve">
-    <value>List of all Product version in path</value>
-  </data>
-  <data name="ConstListRegisComponent" xml:space="preserve">
-    <value>List of all Bonanza component in registry</value>
-  </data>
-  <data name="ConstRegDLL" xml:space="preserve">
-    <value>Register DLL</value>
-  </data>
-  <data name="ConstRegOCX" xml:space="preserve">
-    <value>Register OCX</value>
-  </data>
-  <data name="ConstSQLServer" xml:space="preserve">
-    <value>SQL Server</value>
-  </data>
-  <data name="ConstUNRegDLL" xml:space="preserve">
-    <value>UnRegister DLL</value>
+  <data name="DefaultDBUsername" xml:space="preserve">
+    <value>invest</value>
   </data>
   <data name="ConstUNRegOCX" xml:space="preserve">
     <value>UnRegister OCX</value>
   </data>
-  <data name="DefaultDBPassword" xml:space="preserve">
-    <value>invest</value>
+  <data name="ConstListRegisComponent" xml:space="preserve">
+    <value>List of all Bonanza component in registry</value>
   </data>
-  <data name="DefaultDBUsername" xml:space="preserve">
-    <value>invest</value>
+  <data name="ConstRegOCX" xml:space="preserve">
+    <value>Register OCX</value>
   </data>
-  <data name="ErrMsgConfig" xml:space="preserve">
-    <value>Please select a config.</value>
+  <data name="MsgInstallInterfaceService" xml:space="preserve">
+    <value>Install an Interface service.</value>
   </data>
-  <data name="ErrMsgConfirmCaption" xml:space="preserve">
-    <value>Confirm</value>
-  </data>
-  <data name="ErrMsgConfirmDelete" xml:space="preserve">
-    <value>Are you sure you want to delete ?</value>
-  </data>
-  <data name="ErrMsgRequired" xml:space="preserve">
-    <value>This field is required.</value>
-  </data>
-  <data name="ErrMsgSelectALeast" xml:space="preserve">
-    <value>Please select at least 1.</value>
-  </data>
-  <data name="ExCannotGetSpecificEnvConfig" xml:space="preserve">
-    <value>Cannot get specific enviroment config from database file.</value>
+  <data name="DefaultWinPassword" xml:space="preserve">
+    <value>wininvest</value>
   </data>
   <data name="MsgComplete" xml:space="preserve">
     <value>Complete.</value>
@@ -178,17 +141,69 @@
   <data name="MsgConfirmRunScript" xml:space="preserve">
     <value>Are you sure you want to run this script. It may change database schema and data ?</value>
   </data>
-  <data name="MsgInstallInterfaceService" xml:space="preserve">
-    <value>Install an Interface service.</value>
+  <data name="ConstSQLServer" xml:space="preserve">
+    <value>SQL Server</value>
+  </data>
+  <data name="ErrMsgSelectALeast" xml:space="preserve">
+    <value>Please select at least 1.</value>
+  </data>
+  <data name="MsgTypeInfo" xml:space="preserve">
+    <value>MsgTypeInfo</value>
+  </data>
+  <data name="ConstBnziServer" xml:space="preserve">
+    <value>Bonanza Interface Server</value>
+  </data>
+  <data name="ConstUNRegDLL" xml:space="preserve">
+    <value>UnRegister DLL</value>
+  </data>
+  <data name="ConstRegDLL" xml:space="preserve">
+    <value>Register DLL</value>
+  </data>
+  <data name="DefaultWinUsername" xml:space="preserve">
+    <value>wininvest</value>
+  </data>
+  <data name="ConstDB2" xml:space="preserve">
+    <value>DB2</value>
   </data>
   <data name="MsgRegisterDLL" xml:space="preserve">
     <value>Register a new configuration DLL file.</value>
   </data>
+  <data name="DefaultDBPassword" xml:space="preserve">
+    <value>invest</value>
+  </data>
+  <data name="ExCannotGetSpecificEnvConfig" xml:space="preserve">
+    <value>Cannot get specific enviroment config from database file.</value>
+  </data>
+  <data name="ErrMsgConfirmCaption" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="ConstListFileVersion" xml:space="preserve">
+    <value>List of all Product version in path</value>
+  </data>
+  <data name="MsgUninstallInterfaceService" xml:space="preserve">
+    <value>Uninstall an Interface service.</value>
+  </data>
+  <data name="ErrMsgConfig" xml:space="preserve">
+    <value>Please select a config.</value>
+  </data>
+  <data name="ErrMsgRequired" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="MsgUnregisterDLL" xml:space="preserve">
+    <value>Unregister an old configuration DLL file.</value>
+  </data>
   <data name="MsgTab1ClearConfig" xml:space="preserve">
     <value>Clear configuration successfully.</value>
   </data>
-  <data name="MsgTab1DeleteConfig" xml:space="preserve">
-    <value>Delete configuration successfully.</value>
+  <data name="MsgTypeExclam" xml:space="preserve">
+    <value>MsgTypeExclam</value>
+  </data>
+  <data name="ConstExcel64Required" xml:space="preserve">
+    <value>C:\\Windows\\SysWOW64\\config\\systemprofile\\Desktop</value>
+    <comment>ใข้าสำหรับ Windows 64 Bit ที่มี Excel ติดตั้ง ต้องสร้าง Folder Temp</comment>
+  </data>
+  <data name="ErrMsgConfirmDelete" xml:space="preserve">
+    <value>Are you sure you want to delete ?</value>
   </data>
   <data name="MsgTab1LoadConfig" xml:space="preserve">
     <value>Load configuration complete.</value>
@@ -196,16 +211,11 @@
   <data name="MsgTab1SaveConfig" xml:space="preserve">
     <value>Save configuration successfully.</value>
   </data>
-  <data name="MsgTypeExclam" xml:space="preserve">
-    <value>MsgTypeExclam</value>
+  <data name="MsgTab1DeleteConfig" xml:space="preserve">
+    <value>Delete configuration successfully.</value>
   </data>
-  <data name="MsgTypeInfo" xml:space="preserve">
-    <value>MsgTypeInfo</value>
-  </data>
-  <data name="MsgUninstallInterfaceService" xml:space="preserve">
-    <value>Uninstall an Interface service.</value>
-  </data>
-  <data name="MsgUnregisterDLL" xml:space="preserve">
-    <value>Unregister an old configuration DLL file.</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="icuba6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\icuba6.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

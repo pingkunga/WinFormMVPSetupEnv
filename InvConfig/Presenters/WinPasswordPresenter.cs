@@ -24,6 +24,16 @@ namespace InvConfig.Presenters
             //Set Value to from
             this.WinPasswordView.Username = WindowsUsername;
             this.WinPasswordView.Password = WindowsPassword;
+           
+
+            if (String.IsNullOrEmpty(WindowsPassword))
+            {
+                this.WinPasswordView.Username = Properties.Resources.DefaultWinPassword;
+            }
+            else
+            {
+                this.WinPasswordView.Password = WindowsPassword;
+            }
             //Add Event
             this.WinPasswordView.OKWinPassword += OKWinPassword;
             this.ShowView();

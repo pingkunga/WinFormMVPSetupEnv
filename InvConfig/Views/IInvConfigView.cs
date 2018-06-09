@@ -41,6 +41,7 @@ namespace InvConfig.Views
         event Action ServiceStatus;
         event Action StartService;
         event Action StopService;
+        event Action OpenBUC;
         #endregion TAB: Enviroment Setup
         //>>TAB: InvestReg
         #region TAB: InvestReg
@@ -97,6 +98,7 @@ namespace InvConfig.Views
         string ScriptNumber { get; set; }
         string Remark { get; set; }
         string BaseRegistryPath { get; set; }
+        Boolean IsUpdateBUCProperties { get; set; }
         string WindowsUsername { get; set; }
         string WindowsPassword { get; set; }
         //service
@@ -104,6 +106,7 @@ namespace InvConfig.Views
         //Other
         Dictionary<string, object> DBTypeDataSource { set; }
         Dictionary<string, string> BaseRegistryDataSource { set; }
+
         Object DatabaseTypeValue { get; }
         Dictionary<string, int> ODBCDataSource { set; }
         Dictionary<string, int> RPTODBCDataSource { set; }

@@ -35,6 +35,8 @@ namespace InvConfig.Models
         public Boolean bnzISNewEncryption { get; set; }
         public string bnzWindowsUsername { get; set; }
         public string bnzWindowsPassword { get; set; }
+
+        public Boolean IsUpdateBUCProperties { get; set; }
         //Flag 
         public Boolean isInstallDllAndOCX { get; set; }
         public Boolean isInstallInterfaceService { get; set; }

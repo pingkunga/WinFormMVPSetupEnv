@@ -43,6 +43,7 @@ namespace InvConfig.Views
         public event Action DeleteEnvironment;
         public event Action ClearEnvironment;
         public event Action ShowWinPassword;
+        public event Action OpenBUC;
         //>> Service
         public event Action ServiceStatus;
         public event Action StartService;
@@ -323,6 +324,20 @@ namespace InvConfig.Views
                         cboBaseRegistry.SelectedIndex = 0;
                     }
                 });
+            }
+        }
+
+        public Boolean IsUpdateBUCProperties
+        {
+            get
+            {
+                Boolean IsUpdateBUC = false;
+                chkUpdateBUC.InvokeIfRequired(() => { IsUpdateBUC = chkUpdateBUC.Checked; });
+                return IsUpdateBUC;
+            }
+            set
+            {
+                chkUpdateBUC.InvokeIfRequired(() => { chkUpdateBUC.Checked = value; });
             }
         }
         public string[] InterfaceStatus 
@@ -648,6 +663,7 @@ namespace InvConfig.Views
         }
         private void BindComponent()
         {
+            //TAB1
             this.btnBrowseLp.Click += OnBrowseLocalPath_Click;
             this.btnBrowseSp.Click += OnBrowseServerPath_Click;
             this.btnOpenLocalPath.Click += OnOpenLocalPath_Click;
@@ -663,6 +679,10 @@ namespace InvConfig.Views
             this.timeService.Tick += OnTimeService_Tick;
             this.btnStartService.Click += OnStartService_Click;
             this.btnStopService.Click += OnStopService_Click;
+            //-BUC Config
+            this.btnOpenBUC.Click += OnBUC_Click;
+
+            //TAB2
 
             this.btnBrowseInvReg.Click += OnBrowseInvestRegis_Click;
             this.btnOpenInvRegPath.Click += OnOpenInvRegPath_Click;
@@ -711,7 +731,7 @@ namespace InvConfig.Views
             {
                 this.ListConfig();
             }
-            this.errorProviderExtended.ClearAllErrorMessages();
+            //ping this.errorProviderExtended.ClearAllErrorMessages();
         }
         private void OnMenuImportConfig_Click(object sender, EventArgs e)
         {
@@ -916,6 +936,14 @@ namespace InvConfig.Views
             if (this.StopService != null)
             {
                 this.StopService();
+            }
+        }
+
+        private void OnBUC_Click(object sender, EventArgs e)
+        {
+            if (this.OpenBUC != null)
+            {
+                this.OpenBUC();
             }
         }
         #endregion TabEvent: Enviroment Config

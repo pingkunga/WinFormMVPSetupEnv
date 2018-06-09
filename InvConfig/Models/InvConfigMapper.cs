@@ -6,6 +6,8 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using Helpers.Registrys;
+using Helpers.file.Config;
+using Helpers.Cryptography;
 
 namespace InvConfig.Models
 {
@@ -172,11 +174,120 @@ namespace InvConfig.Models
                 //        SAVE CONFIG TO REGISTRY
                 //WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
                 SetLocalEnviromentInvConfig(p_InvConfigModel);
-            }catch (IOException Ex) {
+                //MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                //        SAVE CONFIG TO BUC.propertiess
+                //WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+                if (p_InvConfigModel.IsUpdateBUCProperties)
+                {
+                    UpdateBUCProperties(p_InvConfigModel);
+                }
+            }
+            catch (IOException Ex) {
                 Console.WriteLine(Ex.Message);               
                 throw new NotImplementedException();
             }
             return lastConfigID;
+        }
+
+        private void UpdateBUCProperties(InvConfigModel p_InvConfigModel)
+        {
+            //Default BUC Path
+            String BUCPropertiesPath = p_InvConfigModel.bnzLocalPath + "\\Operation\\buc.properties";
+
+            //Check File Exist
+            if (!File.Exists(BUCPropertiesPath))
+            {
+                throw new Exception("Not found Config in path " + BUCPropertiesPath);
+            }
+            //Read BUC
+            Dictionary<string, string> properties = PropertyHelper.LoadConfig(BUCPropertiesPath);
+
+            if (properties == null)
+                return;
+
+            #region PATH
+            if (properties.ContainsKey("INV_LOCAL PATH"))
+                properties["INV_LOCAL PATH"] = p_InvConfigModel.bnzLocalPath;
+            if (properties.ContainsKey("INV_SERVER PATH"))
+                properties["INV_SERVER PATH"] = p_InvConfigModel.bnzServerPath;
+
+            if (properties.ContainsKey("NET_BonanzaPath"))
+                properties["NET_BonanzaPath"] = p_InvConfigModel.bnzServerPath;
+            else
+                properties["NET_BonanzaPath"] = @"C:\Bonanza\BFM\";
+            #endregion PATH
+
+            #region Database
+            if (properties.ContainsKey("INV_ODBC SERVER"))
+                properties["INV_ODBC SERVER"] = p_InvConfigModel.bnzDatabaseName;
+
+
+            #region >>.NET
+            if (properties.ContainsKey("NET_DbProvider"))
+            {
+                if (p_InvConfigModel.databaseType.Equals(Properties.Resources.ConstSQLServer))
+                {
+                    properties["NET_DbProvider"] = "System.Data.SqlClient";
+                }
+                else if (p_InvConfigModel.databaseType.Equals(Properties.Resources.ConstDB2))
+                {
+                    properties["NET_DbProvider"] = "IBM.Data.DB2";
+                }
+                else
+                {
+                    properties["NET_DbProvider"] = "Error !!!" + p_InvConfigModel.databaseType;
+                }
+            }
+                
+
+            if (properties.ContainsKey("NET_Server"))
+                properties["NET_Server"] = p_InvConfigModel.bnzDatabaseServer;
+            if (properties.ContainsKey("NET_Port"))
+                //properties["NET_Port"] = p_InvConfigModel.bnz;
+
+            if (properties.ContainsKey("NET_DatabaseName"))
+                properties["NET_DatabaseName"] = p_InvConfigModel.bnzDatabaseName;
+
+            if (properties.ContainsKey("NET_User"))
+                properties["NET_User"] = Rijndael.EncryptData(p_InvConfigModel.bnzDatabaseUsername
+                                                            , ""
+                                                            , Rijndael.BlockSize.Block256
+                                                            , Rijndael.KeySize.Key256
+                                                            , Rijndael.EncryptionMode.ModeECB
+                                                            , true);
+            if (properties.ContainsKey("NET_Password"))
+                properties["NET_Password"] = Rijndael.EncryptData(p_InvConfigModel.bnzDatabaseUsername
+                                                            , ""
+                                                            , Rijndael.BlockSize.Block256
+                                                            , Rijndael.KeySize.Key256
+                                                            , Rijndael.EncryptionMode.ModeECB
+                                                            , true);
+
+            if (properties.ContainsKey("NET_DefaultSchema"))
+                properties["NET_DefaultSchema"] = "INVEST";
+            #endregion >>.NET
+
+            #region >> INTERFACE
+            if (properties.ContainsKey("INV_PORT"))
+                properties["INV_PORT"] = p_InvConfigModel.bnzInterfacePort;
+            if (properties.ContainsKey("INV_SERVER NAME"))
+                properties["INV_SERVER NAME"] = p_InvConfigModel.bnzInterfaceServer;
+            if (properties.ContainsKey("INV_WinUserName"))
+                properties["INV_WinUserName"] = p_InvConfigModel.bnzWindowsUsername;
+            if (properties.ContainsKey("INV_WinPassword"))
+                properties["INV_WinPassword"] = Rijndael.EncryptData(p_InvConfigModel.bnzWindowsPassword
+                                                            , ""
+                                                            , Rijndael.BlockSize.Block256
+                                                            , Rijndael.KeySize.Key256
+                                                            , Rijndael.EncryptionMode.ModeECB
+                                                            , true);
+            #endregion >> INTERFACE
+            #endregion
+
+            //Save Result
+            PropertyHelper.ClearOldConfig(BUCPropertiesPath);
+
+            PropertyHelper.WriteConfig(BUCPropertiesPath, properties);
         }
 
         public Boolean DeleteConfig(int p_ConfigID)

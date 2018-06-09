@@ -65,8 +65,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.chkRegisInterface);
             this.splitContainer1.Panel2.Controls.Add(this.chkRegisDLL);
             this.splitContainer1.Panel2.Controls.Add(this.btnOK);
-            this.splitContainer1.Size = new System.Drawing.Size(623, 337);
-            this.splitContainer1.SplitterDistance = 285;
+            this.splitContainer1.Size = new System.Drawing.Size(673, 388);
+            this.splitContainer1.SplitterDistance = 328;
             this.splitContainer1.TabIndex = 2;
             // 
             // splitContainer2
@@ -86,8 +86,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.dgvList);
-            this.splitContainer2.Size = new System.Drawing.Size(623, 285);
-            this.splitContainer2.SplitterDistance = 51;
+            this.splitContainer2.Size = new System.Drawing.Size(673, 328);
+            this.splitContainer2.SplitterDistance = 58;
             this.splitContainer2.TabIndex = 2;
             // 
             // btnClearSearch
@@ -135,7 +135,7 @@
             this.dgvList.Name = "dgvList";
             this.dgvList.ReadOnly = true;
             this.dgvList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvList.Size = new System.Drawing.Size(623, 230);
+            this.dgvList.Size = new System.Drawing.Size(673, 266);
             this.dgvList.TabIndex = 4;
             // 
             // chkRegisInterface
@@ -172,7 +172,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 337);
+            this.ClientSize = new System.Drawing.Size(673, 388);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
