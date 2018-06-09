@@ -13,6 +13,7 @@ using InvConfig.Presenters;
 using Helpers.Controls;
 using Microsoft.Win32;
 using InvConfig.Models;
+using System.Reflection;
 
 namespace InvConfig.Views
 {
@@ -693,7 +694,7 @@ namespace InvConfig.Views
         public InvConfigForm()
         {
             InitializeComponent();
-
+            this.Text = this.Text + "-" + Assembly.GetExecutingAssembly().GetName().Version.ToString();
             BindToolStrip();
             BindComponent();
             ValidateComponent();

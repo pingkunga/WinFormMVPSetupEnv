@@ -246,3 +246,112 @@ System.ApplicationException: Base path not found!!!
 2018-06-09 16:33:18,564 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
 System.ApplicationException: Base path not found!!!
    at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 862
+2018-06-09 20:51:36,076 WARN [InvConfig.Presenters.Presenter`1] OnViewInitialize Cannot get specific enviroment config from database file.
+2018-06-09 20:52:21,774 WARN [InvConfig.Presenters.Presenter`1] OnViewInitialize Cannot get specific enviroment config from database file.
+2018-06-09 20:53:05,193 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 862
+2018-06-09 20:53:32,678 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 862
+2018-06-09 20:53:39,966 ERROR [InvConfig.Presenters.Presenter`1] LisBNZDBVersion Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.LisBNZDBVersion() in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 681
+2018-06-09 20:53:48,278 ERROR [InvConfig.Presenters.Presenter`1] LisBNZDBVersion Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.LisBNZDBVersion() in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 681
+2018-06-09 20:53:49,778 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 708
+2018-06-09 20:54:20,742 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 862
+2018-06-09 20:54:37,396 ERROR [InvConfig.Presenters.Presenter`1] LisBNZDBVersion Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.LisBNZDBVersion() in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 681
+2018-06-09 20:54:37,648 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 708
+2018-06-09 20:55:06,763 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 862
+2018-06-09 20:55:23,671 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 708
+2018-06-09 20:56:33,982 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 862
+2018-06-09 20:57:08,815 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 866
+2018-06-09 20:57:16,613 ERROR [InvConfig.Presenters.Presenter`1] LisBNZDBVersion Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.LisBNZDBVersion() in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 681
+2018-06-09 20:57:28,633 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 708
+2018-06-09 20:57:52,595 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 866
+2018-06-09 20:58:09,432 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 708
+2018-06-09 21:00:16,840 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 868
+2018-06-09 21:00:33,826 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 710
+2018-06-09 21:03:57,529 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 868
+2018-06-09 21:04:14,793 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 868
+2018-06-09 21:04:16,714 ERROR [InvConfig.Presenters.Presenter`1] OpenServerPath Path not found !!!
+System.ApplicationException: Path not found !!!
+   at Helpers.Files.FileHelper.OpenWindowsExplorer(String p_Path) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Helpers\File\FileHelper.cs:line 22
+   at InvConfig.Presenters.InvConfigPresenter.OpenServerPath() in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 442
+2018-06-09 21:04:18,442 ERROR [InvConfig.Presenters.Presenter`1] OpenServerPath Path not found !!!
+System.ApplicationException: Path not found !!!
+   at Helpers.Files.FileHelper.OpenWindowsExplorer(String p_Path) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Helpers\File\FileHelper.cs:line 22
+   at InvConfig.Presenters.InvConfigPresenter.OpenServerPath() in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 442
+2018-06-09 21:04:29,540 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 710
+2018-06-09 21:05:22,376 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 710
+2018-06-09 21:07:05,746 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 710
+2018-06-09 21:14:22,139 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 710
+2018-06-09 21:28:39,133 ERROR [InvConfig.Presenters.Presenter`1] GetUserInvestInfo Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at InvConfig.Views.InvConfigForm.get_UserInvest() in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Views\InvConfigForm.cs:line 574
+   at InvConfig.Presenters.InvConfigPresenter.GetUserInvestInfo() in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 1076
+2018-06-09 21:28:54,587 ERROR [InvConfig.Presenters.Presenter`1] GetDllAndOcxList Base path not found!!!
+System.ApplicationException: Base path not found!!!
+   at InvConfig.Presenters.InvConfigPresenter.GetDllAndOcxList(String p_BasePath, String p_Operation) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 868
+2018-06-09 21:28:55,643 ERROR [InvConfig.Presenters.Presenter`1] LisBNZDBVersion Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.LisBNZDBVersion() in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 683
+2018-06-09 21:29:00,345 ERROR [InvConfig.Presenters.Presenter`1] LisBNZDBVersion Thread is Busy
+System.ApplicationException: Thread is Busy
+   at InvConfig.Presenters.InvConfigPresenter.LisBNZDBVersion() in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 683
+2018-06-09 21:29:06,493 ERROR [InvConfig.Presenters.Presenter`1] _bwBNZDBVersion_DoWork Cannot create conection
+System.ApplicationException: Cannot create conection
+   at InvConfig.Models.DBConnect.CheckTableExist(String p_TableName) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Models\DBConnect.cs:line 180
+   at InvConfig.Presenters.InvConfigPresenter._bwBNZDBVersion_DoWork(Object sender, DoWorkEventArgs e) in E:\09Warroom\01PlayGround\BNZ_MVPSetupEnv\InvConfig\Presenters\InvConfigPresenter.cs:line 710

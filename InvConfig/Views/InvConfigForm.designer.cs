@@ -420,9 +420,9 @@
             this.gpbSaveEnvConfigSetting.Controls.Add(this.btnDelEnviroment);
             this.gpbSaveEnvConfigSetting.Controls.Add(this.btnClearEnviroment);
             this.gpbSaveEnvConfigSetting.Controls.Add(this.lblSaveRegPath);
-            this.gpbSaveEnvConfigSetting.Location = new System.Drawing.Point(8, 298);
+            this.gpbSaveEnvConfigSetting.Location = new System.Drawing.Point(8, 317);
             this.gpbSaveEnvConfigSetting.Name = "gpbSaveEnvConfigSetting";
-            this.gpbSaveEnvConfigSetting.Size = new System.Drawing.Size(450, 125);
+            this.gpbSaveEnvConfigSetting.Size = new System.Drawing.Size(450, 103);
             this.gpbSaveEnvConfigSetting.TabIndex = 8;
             this.gpbSaveEnvConfigSetting.TabStop = false;
             this.gpbSaveEnvConfigSetting.Text = "SAVE SETTING";
@@ -433,7 +433,7 @@
             this.btnOpenBUC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnOpenBUC.Location = new System.Drawing.Point(354, 17);
             this.btnOpenBUC.Name = "btnOpenBUC";
-            this.btnOpenBUC.Size = new System.Drawing.Size(84, 49);
+            this.btnOpenBUC.Size = new System.Drawing.Size(42, 38);
             this.btnOpenBUC.TabIndex = 11;
             this.EnvConfigToolTip.SetToolTip(this.btnOpenBUC, "Open BUC");
             this.btnOpenBUC.UseVisualStyleBackColor = true;
@@ -442,7 +442,7 @@
             // 
             this.chkUpdateBUC.AutoSize = true;
             this.chkUpdateBUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.chkUpdateBUC.Location = new System.Drawing.Point(116, 48);
+            this.chkUpdateBUC.Location = new System.Drawing.Point(115, 47);
             this.chkUpdateBUC.Name = "chkUpdateBUC";
             this.chkUpdateBUC.Size = new System.Drawing.Size(176, 19);
             this.chkUpdateBUC.TabIndex = 10;
@@ -460,7 +460,7 @@
             // 
             // btnSaveEnviroment
             // 
-            this.btnSaveEnviroment.Location = new System.Drawing.Point(71, 76);
+            this.btnSaveEnviroment.Location = new System.Drawing.Point(77, 72);
             this.btnSaveEnviroment.Name = "btnSaveEnviroment";
             this.btnSaveEnviroment.Size = new System.Drawing.Size(85, 22);
             this.btnSaveEnviroment.TabIndex = 2;
@@ -469,7 +469,7 @@
             // 
             // btnDelEnviroment
             // 
-            this.btnDelEnviroment.Location = new System.Drawing.Point(168, 76);
+            this.btnDelEnviroment.Location = new System.Drawing.Point(168, 72);
             this.btnDelEnviroment.Name = "btnDelEnviroment";
             this.btnDelEnviroment.Size = new System.Drawing.Size(85, 22);
             this.btnDelEnviroment.TabIndex = 4;
@@ -478,7 +478,7 @@
             // 
             // btnClearEnviroment
             // 
-            this.btnClearEnviroment.Location = new System.Drawing.Point(260, 76);
+            this.btnClearEnviroment.Location = new System.Drawing.Point(259, 72);
             this.btnClearEnviroment.Name = "btnClearEnviroment";
             this.btnClearEnviroment.Size = new System.Drawing.Size(85, 22);
             this.btnClearEnviroment.TabIndex = 3;
@@ -510,24 +510,26 @@
             // 
             // txtRemark
             // 
-            this.txtRemark.Location = new System.Drawing.Point(16, 49);
+            this.txtRemark.Location = new System.Drawing.Point(9, 40);
             this.txtRemark.Multiline = true;
             this.txtRemark.Name = "txtRemark";
-            this.txtRemark.Size = new System.Drawing.Size(325, 74);
+            this.txtRemark.Size = new System.Drawing.Size(337, 86);
             this.txtRemark.TabIndex = 15;
             // 
             // lblRemark
             // 
             this.lblRemark.AutoSize = true;
-            this.lblRemark.Location = new System.Drawing.Point(16, 29);
+            this.lblRemark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblRemark.Location = new System.Drawing.Point(11, 20);
             this.lblRemark.Name = "lblRemark";
-            this.lblRemark.Size = new System.Drawing.Size(53, 13);
+            this.lblRemark.Size = new System.Drawing.Size(59, 13);
             this.lblRemark.TabIndex = 14;
             this.lblRemark.Text = "REMARK";
+            this.lblRemark.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtMarkScriptNo
             // 
-            this.txtMarkScriptNo.Location = new System.Drawing.Point(299, 23);
+            this.txtMarkScriptNo.Location = new System.Drawing.Point(303, 15);
             this.txtMarkScriptNo.Mask = "9999";
             this.txtMarkScriptNo.Name = "txtMarkScriptNo";
             this.txtMarkScriptNo.Size = new System.Drawing.Size(41, 20);
@@ -536,7 +538,7 @@
             // lblPipe10
             // 
             this.lblPipe10.AutoSize = true;
-            this.lblPipe10.Location = new System.Drawing.Point(287, 26);
+            this.lblPipe10.Location = new System.Drawing.Point(287, 18);
             this.lblPipe10.Name = "lblPipe10";
             this.lblPipe10.Size = new System.Drawing.Size(10, 13);
             this.lblPipe10.TabIndex = 7;
@@ -545,7 +547,7 @@
             // lblScriptNo
             // 
             this.lblScriptNo.AutoSize = true;
-            this.lblScriptNo.Location = new System.Drawing.Point(221, 27);
+            this.lblScriptNo.Location = new System.Drawing.Point(221, 20);
             this.lblScriptNo.Name = "lblScriptNo";
             this.lblScriptNo.Size = new System.Drawing.Size(65, 13);
             this.lblScriptNo.TabIndex = 2;
@@ -659,7 +661,7 @@
             this.gpbGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbGeneral.Location = new System.Drawing.Point(8, 6);
             this.gpbGeneral.Name = "gpbGeneral";
-            this.gpbGeneral.Size = new System.Drawing.Size(450, 202);
+            this.gpbGeneral.Size = new System.Drawing.Size(450, 219);
             this.gpbGeneral.TabIndex = 0;
             this.gpbGeneral.TabStop = false;
             this.gpbGeneral.Text = "GENERAL";
@@ -914,7 +916,7 @@
             this.gpbInterface.Controls.Add(this.lblServerPort);
             this.gpbInterface.Controls.Add(this.lblServerName);
             this.gpbInterface.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.gpbInterface.Location = new System.Drawing.Point(8, 214);
+            this.gpbInterface.Location = new System.Drawing.Point(8, 231);
             this.gpbInterface.Name = "gpbInterface";
             this.gpbInterface.Size = new System.Drawing.Size(450, 78);
             this.gpbInterface.TabIndex = 1;

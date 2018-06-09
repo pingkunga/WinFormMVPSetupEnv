@@ -220,8 +220,10 @@ namespace InvConfig.Models
             #region Database
             if (properties.ContainsKey("INV_ODBC SERVER"))
                 properties["INV_ODBC SERVER"] = p_InvConfigModel.bnzDatabaseName;
-
-
+            if (properties.ContainsKey("INV_ODBC REPORT"))
+                properties["INV_ODBC REPORT"] = p_InvConfigModel.bnzRPTDatabaseName;
+            if (properties.ContainsKey("INV_DB SERVER NAME"))
+                properties["INV_DB SERVER NAME"] = p_InvConfigModel.bnzDatabaseServer;
             #region >>.NET
             if (properties.ContainsKey("NET_DbProvider"))
             {
@@ -264,10 +266,20 @@ namespace InvConfig.Models
                                                             , true);
 
             if (properties.ContainsKey("NET_DefaultSchema"))
-                properties["NET_DefaultSchema"] = "INVEST";
+            {
+                if (p_InvConfigModel.databaseType.Equals(Properties.Resources.ConstDB2))
+                {
+                    properties["NET_DefaultSchema"] = "INVEST";
+                }
+            }
             #endregion >>.NET
 
             #region >> INTERFACE
+            if (properties.ContainsKey("NET_InterfacePort"))
+                properties["NET_InterfacePort"] = p_InvConfigModel.bnzInterfacePort;
+            if (properties.ContainsKey("NET_InterfaceServer"))
+                properties["NET_InterfaceServer"] = p_InvConfigModel.bnzInterfaceServer;
+
             if (properties.ContainsKey("INV_PORT"))
                 properties["INV_PORT"] = p_InvConfigModel.bnzInterfacePort;
             if (properties.ContainsKey("INV_SERVER NAME"))

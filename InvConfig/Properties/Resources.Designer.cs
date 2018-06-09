@@ -22,7 +22,7 @@ namespace InvConfig.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace InvConfig.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("InvConfig.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace InvConfig.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Bonanza Interface Server.
         /// </summary>
-        internal static string ConstBnziServer {
+        public static string ConstBnziServer {
             get {
                 return ResourceManager.GetString("ConstBnziServer", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to DB2.
         /// </summary>
-        internal static string ConstDB2 {
+        public static string ConstDB2 {
             get {
                 return ResourceManager.GetString("ConstDB2", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to C:\\Windows\\SysWOW64\\config\\systemprofile\\Desktop.
         /// </summary>
-        internal static string ConstExcel64Required {
+        public static string ConstExcel64Required {
             get {
                 return ResourceManager.GetString("ConstExcel64Required", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to List of all Product version in path.
         /// </summary>
-        internal static string ConstListFileVersion {
+        public static string ConstListFileVersion {
             get {
                 return ResourceManager.GetString("ConstListFileVersion", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to List of all Bonanza component in registry.
         /// </summary>
-        internal static string ConstListRegisComponent {
+        public static string ConstListRegisComponent {
             get {
                 return ResourceManager.GetString("ConstListRegisComponent", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Register DLL.
         /// </summary>
-        internal static string ConstRegDLL {
+        public static string ConstRegDLL {
             get {
                 return ResourceManager.GetString("ConstRegDLL", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Register OCX.
         /// </summary>
-        internal static string ConstRegOCX {
+        public static string ConstRegOCX {
             get {
                 return ResourceManager.GetString("ConstRegOCX", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to SQL Server.
         /// </summary>
-        internal static string ConstSQLServer {
+        public static string ConstSQLServer {
             get {
                 return ResourceManager.GetString("ConstSQLServer", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to UnRegister DLL.
         /// </summary>
-        internal static string ConstUNRegDLL {
+        public static string ConstUNRegDLL {
             get {
                 return ResourceManager.GetString("ConstUNRegDLL", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to UnRegister OCX.
         /// </summary>
-        internal static string ConstUNRegOCX {
+        public static string ConstUNRegOCX {
             get {
                 return ResourceManager.GetString("ConstUNRegOCX", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to invest.
         /// </summary>
-        internal static string DefaultDBPassword {
+        public static string DefaultDBPassword {
             get {
                 return ResourceManager.GetString("DefaultDBPassword", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to invest.
         /// </summary>
-        internal static string DefaultDBUsername {
+        public static string DefaultDBUsername {
             get {
                 return ResourceManager.GetString("DefaultDBUsername", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to wininvest.
         /// </summary>
-        internal static string DefaultWinPassword {
+        public static string DefaultWinPassword {
             get {
                 return ResourceManager.GetString("DefaultWinPassword", resourceCulture);
             }
@@ -180,16 +180,26 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to wininvest.
         /// </summary>
-        internal static string DefaultWinUsername {
+        public static string DefaultWinUsername {
             get {
                 return ResourceManager.GetString("DefaultWinUsername", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Delete {
+            get {
+                object obj = ResourceManager.GetObject("Delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please select a config..
         /// </summary>
-        internal static string ErrMsgConfig {
+        public static string ErrMsgConfig {
             get {
                 return ResourceManager.GetString("ErrMsgConfig", resourceCulture);
             }
@@ -198,7 +208,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Confirm.
         /// </summary>
-        internal static string ErrMsgConfirmCaption {
+        public static string ErrMsgConfirmCaption {
             get {
                 return ResourceManager.GetString("ErrMsgConfirmCaption", resourceCulture);
             }
@@ -207,7 +217,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Are you sure you want to delete ?.
         /// </summary>
-        internal static string ErrMsgConfirmDelete {
+        public static string ErrMsgConfirmDelete {
             get {
                 return ResourceManager.GetString("ErrMsgConfirmDelete", resourceCulture);
             }
@@ -216,7 +226,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to This field is required..
         /// </summary>
-        internal static string ErrMsgRequired {
+        public static string ErrMsgRequired {
             get {
                 return ResourceManager.GetString("ErrMsgRequired", resourceCulture);
             }
@@ -225,7 +235,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Please select at least 1..
         /// </summary>
-        internal static string ErrMsgSelectALeast {
+        public static string ErrMsgSelectALeast {
             get {
                 return ResourceManager.GetString("ErrMsgSelectALeast", resourceCulture);
             }
@@ -234,7 +244,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Cannot get specific enviroment config from database file..
         /// </summary>
-        internal static string ExCannotGetSpecificEnvConfig {
+        public static string ExCannotGetSpecificEnvConfig {
             get {
                 return ResourceManager.GetString("ExCannotGetSpecificEnvConfig", resourceCulture);
             }
@@ -243,7 +253,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icuba6 {
+        public static System.Drawing.Bitmap icuba6 {
             get {
                 object obj = ResourceManager.GetObject("icuba6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +263,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Complete..
         /// </summary>
-        internal static string MsgComplete {
+        public static string MsgComplete {
             get {
                 return ResourceManager.GetString("MsgComplete", resourceCulture);
             }
@@ -262,7 +272,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Are you sure you want to run this script. It may change database schema and data ?.
         /// </summary>
-        internal static string MsgConfirmRunScript {
+        public static string MsgConfirmRunScript {
             get {
                 return ResourceManager.GetString("MsgConfirmRunScript", resourceCulture);
             }
@@ -271,7 +281,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Install an Interface service..
         /// </summary>
-        internal static string MsgInstallInterfaceService {
+        public static string MsgInstallInterfaceService {
             get {
                 return ResourceManager.GetString("MsgInstallInterfaceService", resourceCulture);
             }
@@ -280,7 +290,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Register a new configuration DLL file..
         /// </summary>
-        internal static string MsgRegisterDLL {
+        public static string MsgRegisterDLL {
             get {
                 return ResourceManager.GetString("MsgRegisterDLL", resourceCulture);
             }
@@ -289,7 +299,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Clear configuration successfully..
         /// </summary>
-        internal static string MsgTab1ClearConfig {
+        public static string MsgTab1ClearConfig {
             get {
                 return ResourceManager.GetString("MsgTab1ClearConfig", resourceCulture);
             }
@@ -298,7 +308,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Delete configuration successfully..
         /// </summary>
-        internal static string MsgTab1DeleteConfig {
+        public static string MsgTab1DeleteConfig {
             get {
                 return ResourceManager.GetString("MsgTab1DeleteConfig", resourceCulture);
             }
@@ -307,7 +317,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Load configuration complete..
         /// </summary>
-        internal static string MsgTab1LoadConfig {
+        public static string MsgTab1LoadConfig {
             get {
                 return ResourceManager.GetString("MsgTab1LoadConfig", resourceCulture);
             }
@@ -316,7 +326,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Save configuration successfully..
         /// </summary>
-        internal static string MsgTab1SaveConfig {
+        public static string MsgTab1SaveConfig {
             get {
                 return ResourceManager.GetString("MsgTab1SaveConfig", resourceCulture);
             }
@@ -325,7 +335,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to MsgTypeExclam.
         /// </summary>
-        internal static string MsgTypeExclam {
+        public static string MsgTypeExclam {
             get {
                 return ResourceManager.GetString("MsgTypeExclam", resourceCulture);
             }
@@ -334,7 +344,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to MsgTypeInfo.
         /// </summary>
-        internal static string MsgTypeInfo {
+        public static string MsgTypeInfo {
             get {
                 return ResourceManager.GetString("MsgTypeInfo", resourceCulture);
             }
@@ -343,7 +353,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Uninstall an Interface service..
         /// </summary>
-        internal static string MsgUninstallInterfaceService {
+        public static string MsgUninstallInterfaceService {
             get {
                 return ResourceManager.GetString("MsgUninstallInterfaceService", resourceCulture);
             }
@@ -352,7 +362,7 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Unregister an old configuration DLL file..
         /// </summary>
-        internal static string MsgUnregisterDLL {
+        public static string MsgUnregisterDLL {
             get {
                 return ResourceManager.GetString("MsgUnregisterDLL", resourceCulture);
             }

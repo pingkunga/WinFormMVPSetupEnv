@@ -23,6 +23,7 @@ using InvConfig.Helpers.ExecuteDBScript;
 using System.Windows.Forms;
 using InvConfig.Helper.ImportExport;
 using CsvHelper;
+using System.Threading;
 
 namespace InvConfig.Presenters
 {
@@ -318,8 +319,9 @@ namespace InvConfig.Presenters
                     Properties.Settings.Default.Save();
                     //Save Config to Registry
                     invConfigMapper.SetLocalEnviromentInvConfig(ViewInvConfig);
-                    this.configView.TabEnvConfigMsg = Properties.Resources.MsgTab1LoadConfig;
+                    Thread.Sleep(1000);
                     LisBNZDBVersion();
+                    this.configView.TabEnvConfigMsg = Properties.Resources.MsgTab1LoadConfig;
                 }
             }
             catch(Exception ex)
@@ -729,13 +731,17 @@ namespace InvConfig.Presenters
 
                     }
                 }
-                this.configView.BNZDBVersion = BNZVersionls;
+                
                 e.Result = true;
             }
             catch(Exception ex)
             {
                 log.Error(ex.Message, ex);
                 e.Result = false;
+            }
+            finally
+            {
+                this.configView.BNZDBVersion = BNZVersionls;
             }
         }
 

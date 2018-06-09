@@ -143,7 +143,7 @@
       <DependentUpon>WinPasswordForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -192,6 +192,7 @@
     <Content Include="Lib\Microsoft.SqlServer.Management.Sdk.Sfc.dll" />
     <Content Include="Lib\Microsoft.SqlServer.Smo.dll" />
     <None Include="Resources\Icon\icuba6.ico" />
+    <None Include="Resources\Delete.bmp" />
     <Content Include="Resources\Icon\Share\Connect16.png" />
     <Content Include="Resources\Icon\Share\Folder24.png" />
     <Content Include="Resources\Icon\TabEnv\Originals\WinUser - Copy.png" />
@@ -213,6 +214,7 @@
     <Content Include="Resources\Icon\TabRunScript\RestoreDBUser.png" />
     <Content Include="Resources\Icon\TabRunScript\RunScriptQA.jpg" />
     <Content Include="Resources\Icon\ToolBoxIcon.ico" />
+    <None Include="Resources\Icon\ToolStrip\Exports.png" />
     <Content Include="ToolBoxIcon.ico" />
   </ItemGroup>
   <ItemGroup>
