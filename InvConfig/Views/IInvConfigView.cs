@@ -5,6 +5,7 @@ using System.Text;
 using System.Collections;
 using System.Windows.Forms;
 using Microsoft.Win32;
+using InvConfig.Models;
 
 namespace InvConfig.Views
 {
@@ -86,11 +87,15 @@ namespace InvConfig.Views
         string ConfigType { get; set; }
         string LocalPath { get; set; }
         string ServerPath { get; set; }
+
         string DatebaseType { get; set; }
         string DatabaseServer { get; set; }
         Boolean IsODBC { get; set; }
         string DatabaseName { get; set; }
+        string DatabasePort { get; set; }
         string RPTDatabaseName { get; set; }
+        IList<BNZDBVersionModel> BNZDBVersion { get; set; }
+
         string InterfaceServer { get; set; }
         string InterfacePort { get; set; }
         string DatabaseUsername { get; set; }

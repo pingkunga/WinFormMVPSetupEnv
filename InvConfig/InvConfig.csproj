@@ -99,6 +99,7 @@
     <Compile Include="Helpers\Service\ServiceExtensions.cs" />
     <Compile Include="Helpers\Service\ServiceHelper.cs" />
     <Compile Include="Helpers\Strings\StringExtensions.cs" />
+    <Compile Include="Models\BNZDBVersionModel.cs" />
     <Compile Include="Models\DBConnect.cs" />
     <Compile Include="Models\InvConfigMapper.cs" />
     <Compile Include="Models\InvConfigModel.cs" />

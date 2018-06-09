@@ -42,6 +42,8 @@ namespace InvConfig.Views
             sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " Change Target Framework from .NET 4.0 to .NET 4.7.1", Environment.NewLine);
             sbChangeLog.AppendFormat(changeLogFormat, "", "", "Tab Enviroment Setup", Environment.NewLine);
             sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " Add ability to write buc.properties file", Environment.NewLine);
+            sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " Add Field Database Port / check box write buc config", Environment.NewLine);
+            sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " Load BNZDBVersion", Environment.NewLine);
             sbChangeLog.AppendFormat(changeLogFormat, "VERSION 2.0.0.2", "16-JAN-2015", "Tab Enviroment Setup", Environment.NewLine);
             sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " เพิ่มหน้าจอ และจัดเก็บ Windows Username & Password ลงฐานข้อมูล และ Registry", Environment.NewLine);
             sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " เพิ่มเมนู Validate Enviroment แต้ยังไม่มี Process การทำงาน", Environment.NewLine);

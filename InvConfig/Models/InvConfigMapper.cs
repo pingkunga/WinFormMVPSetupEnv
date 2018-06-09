@@ -243,7 +243,7 @@ namespace InvConfig.Models
             if (properties.ContainsKey("NET_Server"))
                 properties["NET_Server"] = p_InvConfigModel.bnzDatabaseServer;
             if (properties.ContainsKey("NET_Port"))
-                //properties["NET_Port"] = p_InvConfigModel.bnz;
+                properties["NET_Port"] = p_InvConfigModel.bnzDatabasePort;
 
             if (properties.ContainsKey("NET_DatabaseName"))
                 properties["NET_DatabaseName"] = p_InvConfigModel.bnzDatabaseName;

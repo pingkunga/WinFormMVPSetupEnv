@@ -19,6 +19,7 @@ namespace InvConfig.Models
         public string bnzDatabaseServer { get; set; }
         public Boolean bnzISODBC { get; set; }
         public string bnzDatabaseName { get; set; }
+        public string bnzDatabasePort { get; set; }
         public string bnzInterfaceServer { get; set; }
         public string bnzInterfacePort { get; set; }
         public string isIncludeRPTServer { get; set; }

@@ -12,6 +12,7 @@ using InvConfig.Views;
 using InvConfig.Presenters;
 using Helpers.Controls;
 using Microsoft.Win32;
+using InvConfig.Models;
 
 namespace InvConfig.Views
 {
@@ -208,6 +209,20 @@ namespace InvConfig.Views
             }
         }
 
+        public string DatabasePort
+        {
+            get
+            {
+                string databasePort = null;
+                mtPort.InvokeIfRequired(() => { databasePort = mtPort.Text; });
+                return databasePort;
+            }
+            set
+            {
+                mtPort.InvokeIfRequired(() => { mtPort.Text = value; });
+            }
+        }
+
         public string RPTDatabaseName
         {
             get
@@ -219,6 +234,42 @@ namespace InvConfig.Views
             set
             {
                 cboRPTDBName.InvokeIfRequired(() => { cboRPTDBName.Text = value; });
+            }
+        }
+
+        public IList<BNZDBVersionModel> BNZDBVersion
+        {
+            set
+            {
+                if (value != null)
+                {
+                    BindingSource bindingSource = new BindingSource();
+                    bindingSource.DataSource = value;
+                    dvgBNZVersion.InvokeIfRequired(() => {
+                        dvgBNZVersion.DataSource = bindingSource;
+                        //Set Property
+                        dvgBNZVersion.Columns[0].HeaderText = "APPBASE";
+                        dvgBNZVersion.Columns[0].Width = 60;
+                        dvgBNZVersion.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        dvgBNZVersion.Columns[1].HeaderText = "VERSION";
+                        dvgBNZVersion.Columns[1].Width = 60;
+                        dvgBNZVersion.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        dvgBNZVersion.Columns[2].HeaderText = "UPDATE";
+                        dvgBNZVersion.Columns[2].Width = 110;
+                        dvgBNZVersion.Columns[2].DefaultCellStyle.Format = "yyyy-MM-dd HH:mm:ss";
+                        dvgBNZVersion.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        dvgBNZVersion.Columns[3].HeaderText = "COMPAT";
+                        dvgBNZVersion.Columns[3].Width = 55;
+                        dvgBNZVersion.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    });
+                }
+            }
+
+            get
+            {
+                BindingSource bindingSource = new BindingSource();
+                dvgBNZVersion.InvokeIfRequired(() => { bindingSource.DataSource = dvgBNZVersion.DataSource; });
+                return bindingSource.List.Cast<BNZDBVersionModel>().ToList();
             }
         }
 
@@ -618,6 +669,7 @@ namespace InvConfig.Views
                 chkOpenLog.InvokeIfRequired(() => { chkOpenLog.Enabled = value; });
             }
         }
+
         public void AddConsoleLog(string p_Message)
         {
             txtConsoleLog.InvokeIfRequired(() => { txtConsoleLog.AppendText(p_Message + Environment.NewLine); });

@@ -50,7 +50,7 @@
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabEnvSetup = new System.Windows.Forms.TabPage();
             this.gpbBUC = new System.Windows.Forms.GroupBox();
-            this.dvgVersion = new System.Windows.Forms.DataGridView();
+            this.dvgBNZVersion = new System.Windows.Forms.DataGridView();
             this.gpbSaveEnvConfigSetting = new System.Windows.Forms.GroupBox();
             this.btnOpenBUC = new System.Windows.Forms.Button();
             this.chkUpdateBUC = new System.Windows.Forms.CheckBox();
@@ -74,6 +74,8 @@
             this.lblDBPassword = new System.Windows.Forms.Label();
             this.lblDBUsername = new System.Windows.Forms.Label();
             this.gpbGeneral = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.mtPort = new System.Windows.Forms.MaskedTextBox();
             this.lblRptDB = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cboRPTDBName = new System.Windows.Forms.ComboBox();
@@ -185,7 +187,7 @@
             this.tabMain.SuspendLayout();
             this.tabEnvSetup.SuspendLayout();
             this.gpbBUC.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgVersion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgBNZVersion)).BeginInit();
             this.gpbSaveEnvConfigSetting.SuspendLayout();
             this.gpbNote.SuspendLayout();
             this.gpbDBAuth.SuspendLayout();
@@ -389,7 +391,7 @@
             // 
             // gpbBUC
             // 
-            this.gpbBUC.Controls.Add(this.dvgVersion);
+            this.gpbBUC.Controls.Add(this.dvgBNZVersion);
             this.gpbBUC.Location = new System.Drawing.Point(470, 96);
             this.gpbBUC.Name = "gpbBUC";
             this.gpbBUC.Size = new System.Drawing.Size(352, 139);
@@ -397,13 +399,17 @@
             this.gpbBUC.TabStop = false;
             this.gpbBUC.Text = "Version";
             // 
-            // dvgVersion
+            // dvgBNZVersion
             // 
-            this.dvgVersion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgVersion.Location = new System.Drawing.Point(11, 23);
-            this.dvgVersion.Name = "dvgVersion";
-            this.dvgVersion.Size = new System.Drawing.Size(334, 102);
-            this.dvgVersion.TabIndex = 0;
+            this.dvgBNZVersion.AllowUserToAddRows = false;
+            this.dvgBNZVersion.AllowUserToDeleteRows = false;
+            this.dvgBNZVersion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgBNZVersion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dvgBNZVersion.Location = new System.Drawing.Point(3, 16);
+            this.dvgBNZVersion.Name = "dvgBNZVersion";
+            this.dvgBNZVersion.ReadOnly = true;
+            this.dvgBNZVersion.Size = new System.Drawing.Size(346, 120);
+            this.dvgBNZVersion.TabIndex = 0;
             // 
             // gpbSaveEnvConfigSetting
             // 
@@ -504,16 +510,16 @@
             // 
             // txtRemark
             // 
-            this.txtRemark.Location = new System.Drawing.Point(21, 49);
+            this.txtRemark.Location = new System.Drawing.Point(16, 49);
             this.txtRemark.Multiline = true;
             this.txtRemark.Name = "txtRemark";
-            this.txtRemark.Size = new System.Drawing.Size(253, 74);
+            this.txtRemark.Size = new System.Drawing.Size(325, 74);
             this.txtRemark.TabIndex = 15;
             // 
             // lblRemark
             // 
             this.lblRemark.AutoSize = true;
-            this.lblRemark.Location = new System.Drawing.Point(221, 25);
+            this.lblRemark.Location = new System.Drawing.Point(16, 29);
             this.lblRemark.Name = "lblRemark";
             this.lblRemark.Size = new System.Drawing.Size(53, 13);
             this.lblRemark.TabIndex = 14;
@@ -521,7 +527,7 @@
             // 
             // txtMarkScriptNo
             // 
-            this.txtMarkScriptNo.Location = new System.Drawing.Point(108, 23);
+            this.txtMarkScriptNo.Location = new System.Drawing.Point(299, 23);
             this.txtMarkScriptNo.Mask = "9999";
             this.txtMarkScriptNo.Name = "txtMarkScriptNo";
             this.txtMarkScriptNo.Size = new System.Drawing.Size(41, 20);
@@ -530,7 +536,7 @@
             // lblPipe10
             // 
             this.lblPipe10.AutoSize = true;
-            this.lblPipe10.Location = new System.Drawing.Point(92, 26);
+            this.lblPipe10.Location = new System.Drawing.Point(287, 26);
             this.lblPipe10.Name = "lblPipe10";
             this.lblPipe10.Size = new System.Drawing.Size(10, 13);
             this.lblPipe10.TabIndex = 7;
@@ -539,7 +545,7 @@
             // lblScriptNo
             // 
             this.lblScriptNo.AutoSize = true;
-            this.lblScriptNo.Location = new System.Drawing.Point(21, 26);
+            this.lblScriptNo.Location = new System.Drawing.Point(221, 27);
             this.lblScriptNo.Name = "lblScriptNo";
             this.lblScriptNo.Size = new System.Drawing.Size(65, 13);
             this.lblScriptNo.TabIndex = 2;
@@ -623,6 +629,8 @@
             // 
             // gpbGeneral
             // 
+            this.gpbGeneral.Controls.Add(this.label3);
+            this.gpbGeneral.Controls.Add(this.mtPort);
             this.gpbGeneral.Controls.Add(this.lblRptDB);
             this.gpbGeneral.Controls.Add(this.label1);
             this.gpbGeneral.Controls.Add(this.cboRPTDBName);
@@ -657,6 +665,24 @@
             this.gpbGeneral.Text = "GENERAL";
             this.gpbGeneral.UseCompatibleTextRendering = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(349, 112);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(10, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = ":";
+            // 
+            // mtPort
+            // 
+            this.mtPort.Location = new System.Drawing.Point(365, 109);
+            this.mtPort.Mask = "00000";
+            this.mtPort.Name = "mtPort";
+            this.mtPort.Size = new System.Drawing.Size(51, 20);
+            this.mtPort.TabIndex = 24;
+            this.mtPort.ValidatingType = typeof(int);
+            // 
             // lblRptDB
             // 
             this.lblRptDB.AutoSize = true;
@@ -681,7 +707,7 @@
             this.cboRPTDBName.Location = new System.Drawing.Point(116, 163);
             this.cboRPTDBName.MaxDropDownItems = 5;
             this.cboRPTDBName.Name = "cboRPTDBName";
-            this.cboRPTDBName.Size = new System.Drawing.Size(229, 21);
+            this.cboRPTDBName.Size = new System.Drawing.Size(228, 21);
             this.cboRPTDBName.TabIndex = 21;
             // 
             // chkISODBC
@@ -758,7 +784,7 @@
             // 
             this.txtDBServer.Location = new System.Drawing.Point(115, 108);
             this.txtDBServer.Name = "txtDBServer";
-            this.txtDBServer.Size = new System.Drawing.Size(323, 20);
+            this.txtDBServer.Size = new System.Drawing.Size(229, 20);
             this.txtDBServer.TabIndex = 12;
             // 
             // cboDatabase
@@ -1724,7 +1750,7 @@
             this.tabEnvSetup.ResumeLayout(false);
             this.tabEnvSetup.PerformLayout();
             this.gpbBUC.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dvgVersion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgBNZVersion)).EndInit();
             this.gpbSaveEnvConfigSetting.ResumeLayout(false);
             this.gpbSaveEnvConfigSetting.PerformLayout();
             this.gpbNote.ResumeLayout(false);
@@ -1908,8 +1934,10 @@
         private System.Windows.Forms.Button btnWinPassword;
         private System.Windows.Forms.ToolStripButton tsBtnValidate;
         private System.Windows.Forms.GroupBox gpbBUC;
-        private System.Windows.Forms.DataGridView dvgVersion;
+        private System.Windows.Forms.DataGridView dvgBNZVersion;
         private System.Windows.Forms.Button btnOpenBUC;
         private System.Windows.Forms.CheckBox chkUpdateBUC;
+        private System.Windows.Forms.MaskedTextBox mtPort;
+        private System.Windows.Forms.Label label3;
     }
 }

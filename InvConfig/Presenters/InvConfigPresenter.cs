@@ -48,7 +48,10 @@ namespace InvConfig.Presenters
                 invConfigModel.databaseType = configView.DatebaseType;
                 invConfigModel.bnzDatabaseServer = configView.DatabaseServer;
                 invConfigModel.bnzISODBC = configView.IsODBC;
+
                 invConfigModel.bnzDatabaseName = configView.DatabaseName;
+                invConfigModel.bnzDatabasePort = configView.DatabasePort;
+
                 invConfigModel.bnzRPTDatabaseName = configView.RPTDatabaseName;
                 invConfigModel.bnzInterfaceServer = configView.InterfaceServer;
                 invConfigModel.bnzInterfacePort = configView.InterfacePort;
@@ -75,6 +78,7 @@ namespace InvConfig.Presenters
                 configView.DatabaseServer = value.bnzDatabaseServer;
                 configView.IsODBC = value.bnzISODBC;
                 configView.DatabaseName = value.bnzDatabaseName;
+                configView.DatabasePort = value.bnzDatabasePort;
                 configView.RPTDatabaseName = value.bnzRPTDatabaseName;
                 configView.InterfaceServer = value.bnzInterfaceServer;
                 configView.InterfacePort = value.bnzInterfacePort;
@@ -121,6 +125,7 @@ namespace InvConfig.Presenters
                 //=========================================
                 //Load Last Config
                 this.ViewInvConfig = invConfigMapper.GetInvConfigByIDAndName(Properties.Settings.Default.LastConfigID, Properties.Settings.Default.LastConfigName);
+                LisBNZDBVersion();
             }
             catch(ApplicationException ex)
             {
@@ -314,6 +319,7 @@ namespace InvConfig.Presenters
                     //Save Config to Registry
                     invConfigMapper.SetLocalEnviromentInvConfig(ViewInvConfig);
                     this.configView.TabEnvConfigMsg = Properties.Resources.MsgTab1LoadConfig;
+                    LisBNZDBVersion();
                 }
             }
             catch(Exception ex)
@@ -658,6 +664,96 @@ namespace InvConfig.Presenters
             
         }
         #endregion service
+        #region bnzDBVersion
+        private void LisBNZDBVersion()
+        {
+            try
+            {
+                this.configView.ShowProgressMarquee(true);
+                databaseWorker.DoWork += new DoWorkEventHandler(_bwBNZDBVersion_DoWork);
+                databaseWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(_bwBNZDBVersion_Completed);
+                if (!databaseWorker.IsBusy)
+                {
+                    databaseWorker.RunWorkerAsync();
+                }
+                else
+                {
+                    throw new ApplicationException("Thread is Busy");
+                }
+            }
+            catch (Exception ex)
+            {
+                //write log
+                databaseWorker.CancelAsync();
+                log.Error(ex.Message, ex);
+                this.configView.TabEnvConfigMsg = ex.Message;
+            }
+            finally
+            {
+                this.configView.ShowProgressMarquee(false);
+            }
+        }
+        private void _bwBNZDBVersion_DoWork(object sender, DoWorkEventArgs e)
+        {
+            IList<BNZDBVersionModel> BNZVersionls = new List<BNZDBVersionModel>();
+            try
+            {
+                dbConnect.SetDatabaseProperties(this.configView.DatebaseType,
+                                               this.configView.IsODBC,
+                                               this.configView.DatabaseServer,
+                                               this.configView.DatabaseName,
+                                               this.configView.DatabaseUsername,
+                                               this.configView.DatabasePassword);
+                string sqlQuery = "";
+                if (dbConnect.CheckTableExist("BNZDBVERSION"))
+                {
+                    sqlQuery = "SELECT * FROM INVEST.BNZDBVERSION ORDER BY CREATEDATE DESC";
+
+                    
+                    using (DataTable dbVersionData = dbConnect.RetrieveData(sqlQuery))
+                    {
+                        if (dbVersionData != null)
+                        {
+                            DataView dbVersionView = new DataView(dbVersionData);
+
+                            foreach (DataRowView dbVersionRow in dbVersionView)
+                            {
+                                BNZDBVersionModel BnzVersion = new BNZDBVersionModel();
+                                BnzVersion.AppBase = (dbVersionRow["APPBASE"] == DBNull.Value) ? string.Empty : dbVersionRow["APPBASE"].ToString().Trim();
+                                BnzVersion.VersionId = (dbVersionRow["VERSIONID"] == DBNull.Value) ? string.Empty : dbVersionRow["VERSIONID"].ToString().Trim();
+                                BnzVersion.CreateDate = (DateTime)dbVersionRow["CREATEDATE"];
+                                BnzVersion.IsCompatible = (dbVersionRow["ISCOMPATIBLE"] == DBNull.Value) ? string.Empty : dbVersionRow["ISCOMPATIBLE"].ToString().Trim();
+                                BNZVersionls.Add(BnzVersion);
+                            }       
+                        }
+
+                    }
+                }
+                this.configView.BNZDBVersion = BNZVersionls;
+                e.Result = true;
+            }
+            catch(Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                e.Result = false;
+            }
+        }
+
+        private void _bwBNZDBVersion_Completed(object sender, RunWorkerCompletedEventArgs e)
+        {
+            databaseWorker.RunWorkerCompleted -= new RunWorkerCompletedEventHandler(_bwBNZDBVersion_Completed);
+            databaseWorker.DoWork -= new DoWorkEventHandler(_bwBNZDBVersion_DoWork);
+
+            if ((bool)e.Result)
+            {
+                this.configView.ShowProgress(100);
+            }
+            else
+            {
+                this.configView.ShowProgress(0);
+            }
+        }
+        #endregion bnDBVersion
         #endregion Tab: Enviroment Config
         #region Tab: InvestReg
         private void BrowseInvestRegPath()
@@ -913,12 +1009,13 @@ namespace InvConfig.Presenters
                 #endregion GetQuery
                 using (DataTable userData = dbConnect.RetrieveData(sqlQuery))
                 {
-                    DataView userView = new DataView(userData);
-                    userView.Sort = "USERNAME ASC";
-
                     #region Convert Datatable to UserInvestModel
                     if (userData != null)
                     {
+                        DataView userView = new DataView(userData);
+                        userView.Sort = "USERNAME ASC";
+
+                    
                         foreach (DataRowView userDataRow in userView)
                         {
                             UserInvestModel userInvest = new UserInvestModel();
