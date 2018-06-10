@@ -77,7 +77,8 @@ namespace InvConfig.Views
                 dgvList.Columns.Add(deleteCol);
                 deleteCol.HeaderText = "Delete";
                 deleteCol.Width = 50;
-                deleteCol.Image = ((System.Drawing.Image)(Properties.Resources.Delete));
+                deleteCol.Image = new Bitmap((System.Drawing.Image)(Properties.Resources.Delete), 15, 15);
+
                 deleteCol.Name = "Delete";
             }
         }
