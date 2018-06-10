@@ -50,12 +50,14 @@
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabEnvSetup = new System.Windows.Forms.TabPage();
             this.gpbApp = new System.Windows.Forms.GroupBox();
-            this.btnConnector = new System.Windows.Forms.Button();
-            this.cboStartMSNETAS = new System.Windows.Forms.ComboBox();
-            this.btnExtension = new System.Windows.Forms.Button();
-            this.btnAdmin = new System.Windows.Forms.Button();
+            this.gpbVB6 = new System.Windows.Forms.GroupBox();
             this.btnOperation = new System.Windows.Forms.Button();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.gpbNet = new System.Windows.Forms.GroupBox();
             this.btnAppBUC = new System.Windows.Forms.Button();
+            this.cboStartMSNETAS = new System.Windows.Forms.ComboBox();
+            this.btnConnector = new System.Windows.Forms.Button();
+            this.btnExtension = new System.Windows.Forms.Button();
             this.gpbBUC = new System.Windows.Forms.GroupBox();
             this.dvgBNZVersion = new System.Windows.Forms.DataGridView();
             this.gpbSaveEnvConfigSetting = new System.Windows.Forms.GroupBox();
@@ -190,12 +192,12 @@
             this.EnvConfigToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timeService = new System.Windows.Forms.Timer(this.components);
             this.errorProviderExtended = new ErrorProviderExtended();
-            this.gpbNet = new System.Windows.Forms.GroupBox();
-            this.gpbVB6 = new System.Windows.Forms.GroupBox();
             this.tsMain.SuspendLayout();
             this.tabMain.SuspendLayout();
             this.tabEnvSetup.SuspendLayout();
             this.gpbApp.SuspendLayout();
+            this.gpbVB6.SuspendLayout();
+            this.gpbNet.SuspendLayout();
             this.gpbBUC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgBNZVersion)).BeginInit();
             this.gpbSaveEnvConfigSetting.SuspendLayout();
@@ -213,8 +215,6 @@
             this.tsScript.SuspendLayout();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderExtended)).BeginInit();
-            this.gpbNet.SuspendLayout();
-            this.gpbVB6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tsMain
@@ -413,47 +413,16 @@
             this.gpbApp.TabStop = false;
             this.gpbApp.Text = "Start App";
             // 
-            // btnConnector
+            // gpbVB6
             // 
-            this.btnConnector.BackgroundImage = global::InvConfig.Properties.Resources.icuba3;
-            this.btnConnector.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConnector.Location = new System.Drawing.Point(56, 18);
-            this.btnConnector.Name = "btnConnector";
-            this.btnConnector.Size = new System.Drawing.Size(42, 38);
-            this.btnConnector.TabIndex = 5;
-            this.EnvConfigToolTip.SetToolTip(this.btnConnector, "Connector");
-            this.btnConnector.UseVisualStyleBackColor = true;
-            // 
-            // cboStartMSNETAS
-            // 
-            this.cboStartMSNETAS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboStartMSNETAS.FormattingEnabled = true;
-            this.cboStartMSNETAS.Location = new System.Drawing.Point(149, 27);
-            this.cboStartMSNETAS.Name = "cboStartMSNETAS";
-            this.cboStartMSNETAS.Size = new System.Drawing.Size(62, 21);
-            this.cboStartMSNETAS.TabIndex = 4;
-            // 
-            // btnExtension
-            // 
-            this.btnExtension.BackgroundImage = global::InvConfig.Properties.Resources.icuba5;
-            this.btnExtension.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnExtension.Location = new System.Drawing.Point(104, 19);
-            this.btnExtension.Name = "btnExtension";
-            this.btnExtension.Size = new System.Drawing.Size(42, 36);
-            this.btnExtension.TabIndex = 3;
-            this.EnvConfigToolTip.SetToolTip(this.btnExtension, "Extension");
-            this.btnExtension.UseVisualStyleBackColor = true;
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.BackgroundImage = global::InvConfig.Properties.Resources.Administration_;
-            this.btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdmin.Location = new System.Drawing.Point(59, 18);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(42, 38);
-            this.btnAdmin.TabIndex = 2;
-            this.EnvConfigToolTip.SetToolTip(this.btnAdmin, "Administration");
-            this.btnAdmin.UseVisualStyleBackColor = true;
+            this.gpbVB6.Controls.Add(this.btnOperation);
+            this.gpbVB6.Controls.Add(this.btnAdmin);
+            this.gpbVB6.Location = new System.Drawing.Point(10, 16);
+            this.gpbVB6.Name = "gpbVB6";
+            this.gpbVB6.Size = new System.Drawing.Size(108, 65);
+            this.gpbVB6.TabIndex = 7;
+            this.gpbVB6.TabStop = false;
+            this.gpbVB6.Text = "VB6";
             // 
             // btnOperation
             // 
@@ -466,6 +435,30 @@
             this.EnvConfigToolTip.SetToolTip(this.btnOperation, "Operation");
             this.btnOperation.UseVisualStyleBackColor = true;
             // 
+            // btnAdmin
+            // 
+            this.btnAdmin.BackgroundImage = global::InvConfig.Properties.Resources.Administration_;
+            this.btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdmin.Location = new System.Drawing.Point(59, 18);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(42, 38);
+            this.btnAdmin.TabIndex = 2;
+            this.EnvConfigToolTip.SetToolTip(this.btnAdmin, "Administration");
+            this.btnAdmin.UseVisualStyleBackColor = true;
+            // 
+            // gpbNet
+            // 
+            this.gpbNet.Controls.Add(this.btnAppBUC);
+            this.gpbNet.Controls.Add(this.cboStartMSNETAS);
+            this.gpbNet.Controls.Add(this.btnConnector);
+            this.gpbNet.Controls.Add(this.btnExtension);
+            this.gpbNet.Location = new System.Drawing.Point(125, 17);
+            this.gpbNet.Name = "gpbNet";
+            this.gpbNet.Size = new System.Drawing.Size(220, 65);
+            this.gpbNet.TabIndex = 6;
+            this.gpbNet.TabStop = false;
+            this.gpbNet.Text = "MS.NET";
+            // 
             // btnAppBUC
             // 
             this.btnAppBUC.BackgroundImage = global::InvConfig.Properties.Resources.icuba6;
@@ -476,6 +469,37 @@
             this.btnAppBUC.TabIndex = 0;
             this.EnvConfigToolTip.SetToolTip(this.btnAppBUC, "BUC");
             this.btnAppBUC.UseVisualStyleBackColor = true;
+            // 
+            // cboStartMSNETAS
+            // 
+            this.cboStartMSNETAS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboStartMSNETAS.FormattingEnabled = true;
+            this.cboStartMSNETAS.Location = new System.Drawing.Point(149, 27);
+            this.cboStartMSNETAS.Name = "cboStartMSNETAS";
+            this.cboStartMSNETAS.Size = new System.Drawing.Size(62, 21);
+            this.cboStartMSNETAS.TabIndex = 4;
+            // 
+            // btnConnector
+            // 
+            this.btnConnector.BackgroundImage = global::InvConfig.Properties.Resources.icuba3;
+            this.btnConnector.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConnector.Location = new System.Drawing.Point(56, 18);
+            this.btnConnector.Name = "btnConnector";
+            this.btnConnector.Size = new System.Drawing.Size(42, 38);
+            this.btnConnector.TabIndex = 5;
+            this.EnvConfigToolTip.SetToolTip(this.btnConnector, "Connector");
+            this.btnConnector.UseVisualStyleBackColor = true;
+            // 
+            // btnExtension
+            // 
+            this.btnExtension.BackgroundImage = global::InvConfig.Properties.Resources.icuba5;
+            this.btnExtension.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnExtension.Location = new System.Drawing.Point(104, 19);
+            this.btnExtension.Name = "btnExtension";
+            this.btnExtension.Size = new System.Drawing.Size(42, 36);
+            this.btnExtension.TabIndex = 3;
+            this.EnvConfigToolTip.SetToolTip(this.btnExtension, "Extension");
+            this.btnExtension.UseVisualStyleBackColor = true;
             // 
             // gpbBUC
             // 
@@ -1820,30 +1844,6 @@
             this.errorProviderExtended.ContainerControl = this;
             this.errorProviderExtended.SummaryMessage = "Please enter following mandatory fields,";
             // 
-            // gpbNet
-            // 
-            this.gpbNet.Controls.Add(this.btnAppBUC);
-            this.gpbNet.Controls.Add(this.cboStartMSNETAS);
-            this.gpbNet.Controls.Add(this.btnConnector);
-            this.gpbNet.Controls.Add(this.btnExtension);
-            this.gpbNet.Location = new System.Drawing.Point(125, 17);
-            this.gpbNet.Name = "gpbNet";
-            this.gpbNet.Size = new System.Drawing.Size(220, 65);
-            this.gpbNet.TabIndex = 6;
-            this.gpbNet.TabStop = false;
-            this.gpbNet.Text = "MS.NET";
-            // 
-            // gpbVB6
-            // 
-            this.gpbVB6.Controls.Add(this.btnOperation);
-            this.gpbVB6.Controls.Add(this.btnAdmin);
-            this.gpbVB6.Location = new System.Drawing.Point(10, 16);
-            this.gpbVB6.Name = "gpbVB6";
-            this.gpbVB6.Size = new System.Drawing.Size(108, 65);
-            this.gpbVB6.TabIndex = 7;
-            this.gpbVB6.TabStop = false;
-            this.gpbVB6.Text = "VB6";
-            // 
             // InvConfigForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1864,6 +1864,8 @@
             this.tabEnvSetup.ResumeLayout(false);
             this.tabEnvSetup.PerformLayout();
             this.gpbApp.ResumeLayout(false);
+            this.gpbVB6.ResumeLayout(false);
+            this.gpbNet.ResumeLayout(false);
             this.gpbBUC.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvgBNZVersion)).EndInit();
             this.gpbSaveEnvConfigSetting.ResumeLayout(false);
@@ -1894,8 +1896,6 @@
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderExtended)).EndInit();
-            this.gpbNet.ResumeLayout(false);
-            this.gpbVB6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

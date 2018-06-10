@@ -571,15 +571,21 @@ namespace InvConfig.Presenters
             configView.ConfigID	= 0;
             configView.ConfigName = "";
             configView.ConfigType = "";
-            configView.LocalPath = "";
-            configView.ServerPath = "";
+            //configView.LocalPath = "";
+            //configView.ServerPath = "";
             configView.DatebaseType	= "";
             configView.DatabaseServer = "";
             configView.DatabaseName = "";
             configView.InterfaceServer = ""; 
             configView.InterfacePort = "";
-            configView.DatabaseUsername = "invest";
-            configView.DatabasePassword = "invest";
+            configView.DatabaseUsername = Properties.Resources.DefaultDBUsername;
+            configView.DatabasePassword = Properties.Resources.DefaultDBPassword;
+            configView.DatabasePort = "50000";
+            configView.WindowsUsername = Properties.Resources.DefaultWinUsername;
+            configView.WindowsPassword = Properties.Resources.DefaultWinPassword;
+
+            configView.StartUpMSNetAs = Properties.Resources.ConstStartAutoValue;
+
             configView.ScriptNumber = "";
             configView.Remark = "";
             this.configView.TabEnvConfigMsg = Properties.Resources.MsgTab1ClearConfig;

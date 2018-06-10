@@ -822,7 +822,7 @@ namespace InvConfig.Views
             {
                 this.ListConfig();
             }
-            //ping this.errorProviderExtended.ClearAllErrorMessages();
+            this.errorProviderExtended.ClearAllErrorMessages();
         }
         private void OnMenuImportConfig_Click(object sender, EventArgs e)
         {

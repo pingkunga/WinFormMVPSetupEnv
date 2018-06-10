@@ -44,6 +44,7 @@ namespace InvConfig.Views
             sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " Add ability to write buc.properties file", Environment.NewLine);
             sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " Add Field Database Port / check box write buc config", Environment.NewLine);
             sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " Load BNZDBVersion", Environment.NewLine);
+            sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " Quick lunch application for Developer", Environment.NewLine);
             sbChangeLog.AppendFormat(changeLogFormat, "", "", "Tab Cryptography", Environment.NewLine);
             sbChangeLog.AppendFormat(changeLogFormat, "", "", bulletString + " Sort Username by Ascending order", Environment.NewLine);
             sbChangeLog.AppendFormat(changeLogFormat, "VERSION 2.0.0.2", "16-JAN-2015", "Tab Enviroment Setup", Environment.NewLine);
