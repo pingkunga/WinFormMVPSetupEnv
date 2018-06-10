@@ -195,6 +195,10 @@
     <None Include="Resources\Delete.bmp" />
     <Content Include="Resources\Icon\Share\Connect16.png" />
     <Content Include="Resources\Icon\Share\Folder24.png" />
+    <None Include="Resources\Icon\TabEnv\Administration .ico" />
+    <None Include="Resources\Icon\TabEnv\Operation.ico" />
+    <None Include="Resources\Icon\TabEnv\icuba5.ico" />
+    <None Include="Resources\Icon\TabEnv\icuba3.ico" />
     <Content Include="Resources\Icon\TabEnv\Originals\WinUser - Copy.png" />
     <Content Include="Resources\Icon\TabEnv\Start16.png" />
     <Content Include="Resources\Icon\TabEnv\Start24.png" />

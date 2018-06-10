@@ -46,6 +46,10 @@ namespace InvConfig.Views
         public event Action ClearEnvironment;
         public event Action ShowWinPassword;
         public event Action OpenBUC;
+        public event Action OpenOperation;
+        public event Action OpenAdministration;
+        public event Action OpenConnector;
+        public event Action OpenExtension;
         //>> Service
         public event Action ServiceStatus;
         public event Action StartService;
@@ -413,6 +417,36 @@ namespace InvConfig.Views
                 cboDatabase.SelectedIndex = -1;
             }
         }
+
+        public Dictionary<string, object> StartupAppDataSource
+        {
+            set
+            {
+                cboStartMSNETAS.DisplayMember = "key";
+                cboStartMSNETAS.ValueMember = "value";
+                cboStartMSNETAS.DataSource = new BindingSource(value, null);
+                cboStartMSNETAS.SelectedIndex = -1;
+            }
+        }
+
+        public string StartUpMSNetAs
+        {
+            get
+            {
+                string StartUpMSNetAs = null;
+                cboStartMSNETAS.InvokeIfRequired(() => { StartUpMSNetAs = cboStartMSNETAS.SelectedValue.ToString(); });
+                return StartUpMSNetAs;
+            }
+            set
+            {
+                cboStartMSNETAS.InvokeIfRequired(() => {
+                    if (value == null)
+                        cboStartMSNETAS.SelectedValue = Properties.Resources.ConstStartAutoValue;
+                    else
+                        cboStartMSNETAS.SelectedValue = value;
+                });
+            }
+        }
         public Dictionary<string, string> BaseRegistryDataSource 
         {
             set
@@ -734,7 +768,11 @@ namespace InvConfig.Views
             this.btnStopService.Click += OnStopService_Click;
             //-BUC Config
             this.btnOpenBUC.Click += OnBUC_Click;
-
+            this.btnAppBUC.Click += OnBUC_Click;
+            this.btnOperation.Click += OnOperation_Click;
+            this.btnAdmin.Click += OnAdminsitrator_Click;
+            this.btnConnector.Click += OnConnector_Click;
+            this.btnExtension.Click += OnExtension_Click;
             //TAB2
 
             this.btnBrowseInvReg.Click += OnBrowseInvestRegis_Click;
@@ -997,6 +1035,36 @@ namespace InvConfig.Views
             if (this.OpenBUC != null)
             {
                 this.OpenBUC();
+            }
+        }
+
+        private void OnOperation_Click(object sender, EventArgs e)
+        {
+            if (this.OpenOperation != null)
+            {
+                this.OpenOperation();
+            }
+        }
+
+        private void OnAdminsitrator_Click(object sender, EventArgs e)
+        {
+            if (this.OpenAdministration != null)
+            {
+                this.OpenAdministration();
+            }
+        }
+        private void OnConnector_Click(object sender, EventArgs e)
+        {
+            if (this.OpenConnector != null)
+            {
+                this.OpenConnector();
+            }
+        }
+        private void OnExtension_Click(object sender, EventArgs e)
+        {
+            if (this.OpenExtension != null)
+            {
+                this.OpenExtension();
             }
         }
         #endregion TabEvent: Enviroment Config

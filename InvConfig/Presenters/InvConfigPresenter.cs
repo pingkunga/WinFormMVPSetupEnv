@@ -65,7 +65,9 @@ namespace InvConfig.Presenters
 
                 invConfigModel.bnzISNewEncryption = configView.ISNewEncryption;
                 invConfigModel.bnzWindowsUsername = configView.WindowsUsername;
-                invConfigModel.bnzWindowsPassword = configView.WindowsPassword; 
+                invConfigModel.bnzWindowsPassword = configView.WindowsPassword;
+
+                invConfigModel.StartUpMSNetAs = configView.StartUpMSNetAs;
                 return invConfigModel;
             }
             set
@@ -93,6 +95,8 @@ namespace InvConfig.Presenters
                 configView.ISNewEncryption = value.bnzISNewEncryption;
                 configView.WindowsUsername = value.bnzWindowsUsername;
                 configView.WindowsPassword = value.bnzWindowsPassword;
+
+                configView.StartUpMSNetAs = value.StartUpMSNetAs;
             }
         }
         public InvConfigPresenter(IInvConfigView view) : base(view)
@@ -118,6 +122,7 @@ namespace InvConfig.Presenters
                 BindTabEvent();
                 BindEnvConfigEvent();
                 InitDatabaseType();
+                InitStartupAppDataSource();
                 InitODBCDataSource();
                 InitBaseRegistryPath();
                 BindInvestRegEvent();
@@ -149,6 +154,16 @@ namespace InvConfig.Presenters
                 { Properties.Resources.ConstDB2, DatabaseType.DB2 }
             };
         }
+
+        private void InitStartupAppDataSource()
+        {
+            this.configView.StartupAppDataSource = new Dictionary<string, object>{
+                { Properties.Resources.ConstStart32bitsKey , Properties.Resources.ConstStart32bitsValue },
+                { Properties.Resources.ConstStart64bitsKey, Properties.Resources.ConstStart64bitsValue },
+                { Properties.Resources.ConstStartAutoKey, Properties.Resources.ConstStartAutoValue }
+            };
+        }
+
         private void InitODBCDataSource()
         {
             this.configView.ODBCDataSource = DataSourceHelper.GetSystemDataSourceNames();
@@ -211,6 +226,10 @@ namespace InvConfig.Presenters
             this.configView.StopService += StopSerivce;
 
             this.configView.OpenBUC += OpenBUC;
+            this.configView.OpenOperation += OpenOperation;
+            this.configView.OpenAdministration += OpenAdministration;
+            this.configView.OpenConnector += OpenConnector;
+            this.configView.OpenExtension += OpenExtension;
         }
         private void BindInvestRegEvent()
         {
@@ -645,7 +664,9 @@ namespace InvConfig.Presenters
                 log.Warn(ex.InnerException);
             }
         }
+        #endregion service
 
+        #region Open Application
         private void OpenBUC()
         {
             //C:\Bonanza\BFM\Operation\Buc
@@ -665,7 +686,114 @@ namespace InvConfig.Presenters
             }
             
         }
-        #endregion service
+        private void OpenOperation()
+        {
+            //Check File Exist
+            string Path = this.configView.LocalPath + "\\Operation";
+            string ExeTSYPath = Path + "\\OperationBFM.exe";
+            string ExeInvPath = Path + "\\Operation.exe";
+            if (File.Exists(ExeTSYPath))
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.WorkingDirectory = Path;
+                startInfo.FileName = "OperationBFM.exe";
+                Process.Start(startInfo);
+            }
+            else if (File.Exists(ExeInvPath))
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.WorkingDirectory = Path;
+                startInfo.FileName = "Operation.exe";
+                Process.Start(startInfo);
+            }
+            else
+            {
+                this.configView.TabEnvConfigMsg = "Not found Operation in Path " + Path;
+            }
+        }
+        private void OpenAdministration()
+        {
+            //Check File Exist
+            string Path = this.configView.LocalPath + "\\Operation";
+            string ExePath = Path + "\\Administration.exe";
+            if (File.Exists(ExePath))
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.WorkingDirectory = Path;
+                startInfo.FileName = "Administration.exe";
+                Process.Start(startInfo);
+            }
+            else
+            {
+                this.configView.TabEnvConfigMsg = "Not found Administration.exe in Path " + ExePath;
+            }
+
+        }
+        private void OpenConnector()
+        {
+            string OperPath = this.configView.LocalPath + "\\Operation";
+            string Path = OperPath + "\\Connector";
+            string ExePath = Path + "\\Wmsl.Invest.Office.Connector.exe";
+
+            if (File.Exists(ExePath))
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.WorkingDirectory = OperPath;
+                startInfo.FileName = "STARTConnector.bat";
+                Process.Start(startInfo);
+            }
+            else
+            {
+                this.configView.TabEnvConfigMsg = "Not found Wmsl.Invest.Office.Connector.exe in Path " + ExePath;
+            }
+        }
+        private void OpenExtension()
+        {
+            string Path32 = this.configView.LocalPath + "\\Operation\\AssetAlloc\\AssetAlloc32";
+            string Path64 = this.configView.LocalPath + "\\Operation\\AssetAlloc\\AssetAlloc64";
+
+            string ExePath32 = Path32 + "\\Wmsl.Invest.exe";
+            string ExePath64 = Path64 + "\\Wmsl.Invest.exe";
+
+            string Path = "";
+            string ExePath = "";
+            if (this.configView.StartUpMSNetAs.Equals(Properties.Resources.ConstStart32bitsValue))
+            {
+                Path = Path32;
+                ExePath = ExePath32;
+            }
+            else if (this.configView.StartUpMSNetAs.Equals(Properties.Resources.ConstStart64bitsValue))
+            {
+                Path = Path64;
+                ExePath = ExePath64;
+            }
+            else if (this.configView.StartUpMSNetAs.Equals(Properties.Resources.ConstStartAutoValue))
+            {
+                if (Environment.Is64BitOperatingSystem)
+                {
+                    Path = Path64;
+                    ExePath = ExePath64;
+                }
+                else
+                {
+                    Path = Path32;
+                    ExePath = ExePath32;
+                }
+            }
+
+            if (File.Exists(ExePath))
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.WorkingDirectory = Path;
+                startInfo.FileName = "Wmsl.Invest.exe";
+                Process.Start(startInfo);
+            }
+            else
+            {
+                this.configView.TabEnvConfigMsg = "Not found Wmsl.Invest.exe in Path " + ExePath;
+            }
+        }
+        #endregion Open Application
         #region bnzDBVersion
         private void LisBNZDBVersion()
         {

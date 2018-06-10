@@ -49,6 +49,13 @@
             this.tsBtnAbout = new System.Windows.Forms.ToolStripButton();
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabEnvSetup = new System.Windows.Forms.TabPage();
+            this.gpbApp = new System.Windows.Forms.GroupBox();
+            this.btnConnector = new System.Windows.Forms.Button();
+            this.cboStartMSNETAS = new System.Windows.Forms.ComboBox();
+            this.btnExtension = new System.Windows.Forms.Button();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.btnOperation = new System.Windows.Forms.Button();
+            this.btnAppBUC = new System.Windows.Forms.Button();
             this.gpbBUC = new System.Windows.Forms.GroupBox();
             this.dvgBNZVersion = new System.Windows.Forms.DataGridView();
             this.gpbSaveEnvConfigSetting = new System.Windows.Forms.GroupBox();
@@ -183,9 +190,12 @@
             this.EnvConfigToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timeService = new System.Windows.Forms.Timer(this.components);
             this.errorProviderExtended = new ErrorProviderExtended();
+            this.gpbNet = new System.Windows.Forms.GroupBox();
+            this.gpbVB6 = new System.Windows.Forms.GroupBox();
             this.tsMain.SuspendLayout();
             this.tabMain.SuspendLayout();
             this.tabEnvSetup.SuspendLayout();
+            this.gpbApp.SuspendLayout();
             this.gpbBUC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgBNZVersion)).BeginInit();
             this.gpbSaveEnvConfigSetting.SuspendLayout();
@@ -203,6 +213,8 @@
             this.tsScript.SuspendLayout();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderExtended)).BeginInit();
+            this.gpbNet.SuspendLayout();
+            this.gpbVB6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tsMain
@@ -369,12 +381,13 @@
             this.tabMain.Location = new System.Drawing.Point(0, 40);
             this.tabMain.Name = "tabMain";
             this.tabMain.SelectedIndex = 0;
-            this.tabMain.Size = new System.Drawing.Size(836, 455);
+            this.tabMain.Size = new System.Drawing.Size(836, 489);
             this.tabMain.TabIndex = 5;
             // 
             // tabEnvSetup
             // 
             this.tabEnvSetup.BackColor = System.Drawing.SystemColors.Control;
+            this.tabEnvSetup.Controls.Add(this.gpbApp);
             this.tabEnvSetup.Controls.Add(this.gpbBUC);
             this.tabEnvSetup.Controls.Add(this.gpbSaveEnvConfigSetting);
             this.tabEnvSetup.Controls.Add(this.gpbNote);
@@ -385,16 +398,91 @@
             this.tabEnvSetup.Location = new System.Drawing.Point(4, 22);
             this.tabEnvSetup.Name = "tabEnvSetup";
             this.tabEnvSetup.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEnvSetup.Size = new System.Drawing.Size(828, 429);
+            this.tabEnvSetup.Size = new System.Drawing.Size(828, 463);
             this.tabEnvSetup.TabIndex = 0;
             this.tabEnvSetup.Text = "Enviroment Setup";
+            // 
+            // gpbApp
+            // 
+            this.gpbApp.Controls.Add(this.gpbVB6);
+            this.gpbApp.Controls.Add(this.gpbNet);
+            this.gpbApp.Location = new System.Drawing.Point(470, 6);
+            this.gpbApp.Name = "gpbApp";
+            this.gpbApp.Size = new System.Drawing.Size(352, 94);
+            this.gpbApp.TabIndex = 10;
+            this.gpbApp.TabStop = false;
+            this.gpbApp.Text = "Start App";
+            // 
+            // btnConnector
+            // 
+            this.btnConnector.BackgroundImage = global::InvConfig.Properties.Resources.icuba3;
+            this.btnConnector.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConnector.Location = new System.Drawing.Point(56, 18);
+            this.btnConnector.Name = "btnConnector";
+            this.btnConnector.Size = new System.Drawing.Size(42, 38);
+            this.btnConnector.TabIndex = 5;
+            this.EnvConfigToolTip.SetToolTip(this.btnConnector, "Connector");
+            this.btnConnector.UseVisualStyleBackColor = true;
+            // 
+            // cboStartMSNETAS
+            // 
+            this.cboStartMSNETAS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboStartMSNETAS.FormattingEnabled = true;
+            this.cboStartMSNETAS.Location = new System.Drawing.Point(149, 27);
+            this.cboStartMSNETAS.Name = "cboStartMSNETAS";
+            this.cboStartMSNETAS.Size = new System.Drawing.Size(62, 21);
+            this.cboStartMSNETAS.TabIndex = 4;
+            // 
+            // btnExtension
+            // 
+            this.btnExtension.BackgroundImage = global::InvConfig.Properties.Resources.icuba5;
+            this.btnExtension.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnExtension.Location = new System.Drawing.Point(104, 19);
+            this.btnExtension.Name = "btnExtension";
+            this.btnExtension.Size = new System.Drawing.Size(42, 36);
+            this.btnExtension.TabIndex = 3;
+            this.EnvConfigToolTip.SetToolTip(this.btnExtension, "Extension");
+            this.btnExtension.UseVisualStyleBackColor = true;
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.BackgroundImage = global::InvConfig.Properties.Resources.Administration_;
+            this.btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdmin.Location = new System.Drawing.Point(59, 18);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(42, 38);
+            this.btnAdmin.TabIndex = 2;
+            this.EnvConfigToolTip.SetToolTip(this.btnAdmin, "Administration");
+            this.btnAdmin.UseVisualStyleBackColor = true;
+            // 
+            // btnOperation
+            // 
+            this.btnOperation.BackgroundImage = global::InvConfig.Properties.Resources.Operation;
+            this.btnOperation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOperation.Location = new System.Drawing.Point(10, 18);
+            this.btnOperation.Name = "btnOperation";
+            this.btnOperation.Size = new System.Drawing.Size(42, 38);
+            this.btnOperation.TabIndex = 1;
+            this.EnvConfigToolTip.SetToolTip(this.btnOperation, "Operation");
+            this.btnOperation.UseVisualStyleBackColor = true;
+            // 
+            // btnAppBUC
+            // 
+            this.btnAppBUC.BackgroundImage = global::InvConfig.Properties.Resources.icuba6;
+            this.btnAppBUC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAppBUC.Location = new System.Drawing.Point(9, 18);
+            this.btnAppBUC.Name = "btnAppBUC";
+            this.btnAppBUC.Size = new System.Drawing.Size(42, 38);
+            this.btnAppBUC.TabIndex = 0;
+            this.EnvConfigToolTip.SetToolTip(this.btnAppBUC, "BUC");
+            this.btnAppBUC.UseVisualStyleBackColor = true;
             // 
             // gpbBUC
             // 
             this.gpbBUC.Controls.Add(this.dvgBNZVersion);
-            this.gpbBUC.Location = new System.Drawing.Point(470, 96);
+            this.gpbBUC.Location = new System.Drawing.Point(470, 106);
             this.gpbBUC.Name = "gpbBUC";
-            this.gpbBUC.Size = new System.Drawing.Size(352, 139);
+            this.gpbBUC.Size = new System.Drawing.Size(352, 153);
             this.gpbBUC.TabIndex = 9;
             this.gpbBUC.TabStop = false;
             this.gpbBUC.Text = "Version";
@@ -408,7 +496,7 @@
             this.dvgBNZVersion.Location = new System.Drawing.Point(3, 16);
             this.dvgBNZVersion.Name = "dvgBNZVersion";
             this.dvgBNZVersion.ReadOnly = true;
-            this.dvgBNZVersion.Size = new System.Drawing.Size(346, 120);
+            this.dvgBNZVersion.Size = new System.Drawing.Size(346, 134);
             this.dvgBNZVersion.TabIndex = 0;
             // 
             // gpbSaveEnvConfigSetting
@@ -420,9 +508,9 @@
             this.gpbSaveEnvConfigSetting.Controls.Add(this.btnDelEnviroment);
             this.gpbSaveEnvConfigSetting.Controls.Add(this.btnClearEnviroment);
             this.gpbSaveEnvConfigSetting.Controls.Add(this.lblSaveRegPath);
-            this.gpbSaveEnvConfigSetting.Location = new System.Drawing.Point(8, 317);
+            this.gpbSaveEnvConfigSetting.Location = new System.Drawing.Point(8, 363);
             this.gpbSaveEnvConfigSetting.Name = "gpbSaveEnvConfigSetting";
-            this.gpbSaveEnvConfigSetting.Size = new System.Drawing.Size(450, 103);
+            this.gpbSaveEnvConfigSetting.Size = new System.Drawing.Size(450, 94);
             this.gpbSaveEnvConfigSetting.TabIndex = 8;
             this.gpbSaveEnvConfigSetting.TabStop = false;
             this.gpbSaveEnvConfigSetting.Text = "SAVE SETTING";
@@ -442,7 +530,7 @@
             // 
             this.chkUpdateBUC.AutoSize = true;
             this.chkUpdateBUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.chkUpdateBUC.Location = new System.Drawing.Point(115, 47);
+            this.chkUpdateBUC.Location = new System.Drawing.Point(115, 43);
             this.chkUpdateBUC.Name = "chkUpdateBUC";
             this.chkUpdateBUC.Size = new System.Drawing.Size(176, 19);
             this.chkUpdateBUC.TabIndex = 10;
@@ -460,7 +548,7 @@
             // 
             // btnSaveEnviroment
             // 
-            this.btnSaveEnviroment.Location = new System.Drawing.Point(77, 72);
+            this.btnSaveEnviroment.Location = new System.Drawing.Point(77, 66);
             this.btnSaveEnviroment.Name = "btnSaveEnviroment";
             this.btnSaveEnviroment.Size = new System.Drawing.Size(85, 22);
             this.btnSaveEnviroment.TabIndex = 2;
@@ -469,7 +557,7 @@
             // 
             // btnDelEnviroment
             // 
-            this.btnDelEnviroment.Location = new System.Drawing.Point(168, 72);
+            this.btnDelEnviroment.Location = new System.Drawing.Point(168, 66);
             this.btnDelEnviroment.Name = "btnDelEnviroment";
             this.btnDelEnviroment.Size = new System.Drawing.Size(85, 22);
             this.btnDelEnviroment.TabIndex = 4;
@@ -478,7 +566,7 @@
             // 
             // btnClearEnviroment
             // 
-            this.btnClearEnviroment.Location = new System.Drawing.Point(259, 72);
+            this.btnClearEnviroment.Location = new System.Drawing.Point(259, 65);
             this.btnClearEnviroment.Name = "btnClearEnviroment";
             this.btnClearEnviroment.Size = new System.Drawing.Size(85, 22);
             this.btnClearEnviroment.TabIndex = 3;
@@ -501,7 +589,7 @@
             this.gpbNote.Controls.Add(this.txtMarkScriptNo);
             this.gpbNote.Controls.Add(this.lblPipe10);
             this.gpbNote.Controls.Add(this.lblScriptNo);
-            this.gpbNote.Location = new System.Drawing.Point(470, 241);
+            this.gpbNote.Location = new System.Drawing.Point(470, 265);
             this.gpbNote.Name = "gpbNote";
             this.gpbNote.Size = new System.Drawing.Size(352, 132);
             this.gpbNote.TabIndex = 7;
@@ -557,11 +645,11 @@
             // 
             this.txtMsgTabEnvConfig.BackColor = System.Drawing.SystemColors.Info;
             this.txtMsgTabEnvConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtMsgTabEnvConfig.Location = new System.Drawing.Point(470, 379);
+            this.txtMsgTabEnvConfig.Location = new System.Drawing.Point(470, 406);
             this.txtMsgTabEnvConfig.Multiline = true;
             this.txtMsgTabEnvConfig.Name = "txtMsgTabEnvConfig";
             this.txtMsgTabEnvConfig.ReadOnly = true;
-            this.txtMsgTabEnvConfig.Size = new System.Drawing.Size(352, 44);
+            this.txtMsgTabEnvConfig.Size = new System.Drawing.Size(352, 51);
             this.txtMsgTabEnvConfig.TabIndex = 6;
             // 
             // gpbDBAuth
@@ -572,9 +660,9 @@
             this.gpbDBAuth.Controls.Add(this.txtDBUsername);
             this.gpbDBAuth.Controls.Add(this.lblDBPassword);
             this.gpbDBAuth.Controls.Add(this.lblDBUsername);
-            this.gpbDBAuth.Location = new System.Drawing.Point(470, 6);
+            this.gpbDBAuth.Location = new System.Drawing.Point(8, 203);
             this.gpbDBAuth.Name = "gpbDBAuth";
-            this.gpbDBAuth.Size = new System.Drawing.Size(352, 84);
+            this.gpbDBAuth.Size = new System.Drawing.Size(450, 73);
             this.gpbDBAuth.TabIndex = 5;
             this.gpbDBAuth.TabStop = false;
             this.gpbDBAuth.Text = "DATABASE LOGIN";
@@ -582,7 +670,7 @@
             // lblPipe9
             // 
             this.lblPipe9.AutoSize = true;
-            this.lblPipe9.Location = new System.Drawing.Point(92, 52);
+            this.lblPipe9.Location = new System.Drawing.Point(100, 47);
             this.lblPipe9.Name = "lblPipe9";
             this.lblPipe9.Size = new System.Drawing.Size(10, 13);
             this.lblPipe9.TabIndex = 6;
@@ -591,7 +679,7 @@
             // lblPipe8
             // 
             this.lblPipe8.AutoSize = true;
-            this.lblPipe8.Location = new System.Drawing.Point(92, 23);
+            this.lblPipe8.Location = new System.Drawing.Point(100, 22);
             this.lblPipe8.Name = "lblPipe8";
             this.lblPipe8.Size = new System.Drawing.Size(10, 13);
             this.lblPipe8.TabIndex = 6;
@@ -599,14 +687,14 @@
             // 
             // txtDBPassword
             // 
-            this.txtDBPassword.Location = new System.Drawing.Point(108, 54);
+            this.txtDBPassword.Location = new System.Drawing.Point(116, 45);
             this.txtDBPassword.Name = "txtDBPassword";
             this.txtDBPassword.Size = new System.Drawing.Size(166, 20);
             this.txtDBPassword.TabIndex = 3;
             // 
             // txtDBUsername
             // 
-            this.txtDBUsername.Location = new System.Drawing.Point(108, 22);
+            this.txtDBUsername.Location = new System.Drawing.Point(116, 19);
             this.txtDBUsername.Name = "txtDBUsername";
             this.txtDBUsername.Size = new System.Drawing.Size(166, 20);
             this.txtDBUsername.TabIndex = 2;
@@ -614,7 +702,7 @@
             // lblDBPassword
             // 
             this.lblDBPassword.AutoSize = true;
-            this.lblDBPassword.Location = new System.Drawing.Point(18, 54);
+            this.lblDBPassword.Location = new System.Drawing.Point(18, 49);
             this.lblDBPassword.Name = "lblDBPassword";
             this.lblDBPassword.Size = new System.Drawing.Size(70, 13);
             this.lblDBPassword.TabIndex = 1;
@@ -661,7 +749,7 @@
             this.gpbGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbGeneral.Location = new System.Drawing.Point(8, 6);
             this.gpbGeneral.Name = "gpbGeneral";
-            this.gpbGeneral.Size = new System.Drawing.Size(450, 219);
+            this.gpbGeneral.Size = new System.Drawing.Size(450, 192);
             this.gpbGeneral.TabIndex = 0;
             this.gpbGeneral.TabStop = false;
             this.gpbGeneral.Text = "GENERAL";
@@ -916,7 +1004,7 @@
             this.gpbInterface.Controls.Add(this.lblServerPort);
             this.gpbInterface.Controls.Add(this.lblServerName);
             this.gpbInterface.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.gpbInterface.Location = new System.Drawing.Point(8, 231);
+            this.gpbInterface.Location = new System.Drawing.Point(8, 281);
             this.gpbInterface.Name = "gpbInterface";
             this.gpbInterface.Size = new System.Drawing.Size(450, 78);
             this.gpbInterface.TabIndex = 1;
@@ -1033,14 +1121,14 @@
             this.tabInvReg.Location = new System.Drawing.Point(4, 22);
             this.tabInvReg.Name = "tabInvReg";
             this.tabInvReg.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInvReg.Size = new System.Drawing.Size(828, 429);
+            this.tabInvReg.Size = new System.Drawing.Size(828, 463);
             this.tabInvReg.TabIndex = 5;
             this.tabInvReg.Text = "InvestReg";
             // 
             // btnCopyToClipBoard
             // 
             this.btnCopyToClipBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCopyToClipBoard.Location = new System.Drawing.Point(439, 400);
+            this.btnCopyToClipBoard.Location = new System.Drawing.Point(405, 430);
             this.btnCopyToClipBoard.Name = "btnCopyToClipBoard";
             this.btnCopyToClipBoard.Size = new System.Drawing.Size(28, 23);
             this.btnCopyToClipBoard.TabIndex = 22;
@@ -1051,15 +1139,15 @@
             // 
             this.txtMsgTabInvestReg.BackColor = System.Drawing.SystemColors.Info;
             this.txtMsgTabInvestReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtMsgTabInvestReg.Location = new System.Drawing.Point(473, 401);
+            this.txtMsgTabInvestReg.Location = new System.Drawing.Point(439, 430);
             this.txtMsgTabInvestReg.Name = "txtMsgTabInvestReg";
             this.txtMsgTabInvestReg.ReadOnly = true;
-            this.txtMsgTabInvestReg.Size = new System.Drawing.Size(352, 22);
+            this.txtMsgTabInvestReg.Size = new System.Drawing.Size(383, 22);
             this.txtMsgTabInvestReg.TabIndex = 21;
             // 
             // btnInvRegProceed
             // 
-            this.btnInvRegProceed.Location = new System.Drawing.Point(358, 400);
+            this.btnInvRegProceed.Location = new System.Drawing.Point(324, 430);
             this.btnInvRegProceed.Name = "btnInvRegProceed";
             this.btnInvRegProceed.Size = new System.Drawing.Size(75, 23);
             this.btnInvRegProceed.TabIndex = 20;
@@ -1070,9 +1158,9 @@
             // 
             this.chkListInvReg.CheckOnClick = true;
             this.chkListInvReg.FormattingEnabled = true;
-            this.chkListInvReg.Location = new System.Drawing.Point(8, 96);
+            this.chkListInvReg.Location = new System.Drawing.Point(8, 99);
             this.chkListInvReg.Name = "chkListInvReg";
-            this.chkListInvReg.Size = new System.Drawing.Size(814, 289);
+            this.chkListInvReg.Size = new System.Drawing.Size(814, 319);
             this.chkListInvReg.TabIndex = 1;
             // 
             // gpbRegInfo
@@ -1170,7 +1258,7 @@
             this.tabCryptography.Location = new System.Drawing.Point(4, 22);
             this.tabCryptography.Name = "tabCryptography";
             this.tabCryptography.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCryptography.Size = new System.Drawing.Size(828, 429);
+            this.tabCryptography.Size = new System.Drawing.Size(828, 463);
             this.tabCryptography.TabIndex = 4;
             this.tabCryptography.Text = "Cryptography";
             // 
@@ -1521,7 +1609,7 @@
             this.tabScript.Location = new System.Drawing.Point(4, 22);
             this.tabScript.Name = "tabScript";
             this.tabScript.Padding = new System.Windows.Forms.Padding(3);
-            this.tabScript.Size = new System.Drawing.Size(828, 429);
+            this.tabScript.Size = new System.Drawing.Size(828, 463);
             this.tabScript.TabIndex = 3;
             this.tabScript.Text = "Run Script";
             // 
@@ -1662,7 +1750,7 @@
             this.tslblBClose,
             this.tstxtDBName,
             this.tsProgress});
-            this.statusStrip.Location = new System.Drawing.Point(0, 498);
+            this.statusStrip.Location = new System.Drawing.Point(0, 532);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(840, 23);
             this.statusStrip.TabIndex = 6;
@@ -1732,11 +1820,35 @@
             this.errorProviderExtended.ContainerControl = this;
             this.errorProviderExtended.SummaryMessage = "Please enter following mandatory fields,";
             // 
+            // gpbNet
+            // 
+            this.gpbNet.Controls.Add(this.btnAppBUC);
+            this.gpbNet.Controls.Add(this.cboStartMSNETAS);
+            this.gpbNet.Controls.Add(this.btnConnector);
+            this.gpbNet.Controls.Add(this.btnExtension);
+            this.gpbNet.Location = new System.Drawing.Point(125, 17);
+            this.gpbNet.Name = "gpbNet";
+            this.gpbNet.Size = new System.Drawing.Size(220, 65);
+            this.gpbNet.TabIndex = 6;
+            this.gpbNet.TabStop = false;
+            this.gpbNet.Text = "MS.NET";
+            // 
+            // gpbVB6
+            // 
+            this.gpbVB6.Controls.Add(this.btnOperation);
+            this.gpbVB6.Controls.Add(this.btnAdmin);
+            this.gpbVB6.Location = new System.Drawing.Point(10, 16);
+            this.gpbVB6.Name = "gpbVB6";
+            this.gpbVB6.Size = new System.Drawing.Size(108, 65);
+            this.gpbVB6.TabIndex = 7;
+            this.gpbVB6.TabStop = false;
+            this.gpbVB6.Text = "VB6";
+            // 
             // InvConfigForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 521);
+            this.ClientSize = new System.Drawing.Size(840, 555);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.tabMain);
             this.Controls.Add(this.tsMain);
@@ -1751,6 +1863,7 @@
             this.tabMain.ResumeLayout(false);
             this.tabEnvSetup.ResumeLayout(false);
             this.tabEnvSetup.PerformLayout();
+            this.gpbApp.ResumeLayout(false);
             this.gpbBUC.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvgBNZVersion)).EndInit();
             this.gpbSaveEnvConfigSetting.ResumeLayout(false);
@@ -1781,6 +1894,8 @@
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderExtended)).EndInit();
+            this.gpbNet.ResumeLayout(false);
+            this.gpbVB6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1941,5 +2056,14 @@
         private System.Windows.Forms.CheckBox chkUpdateBUC;
         private System.Windows.Forms.MaskedTextBox mtPort;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox gpbApp;
+        private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.Button btnOperation;
+        private System.Windows.Forms.Button btnAppBUC;
+        private System.Windows.Forms.ComboBox cboStartMSNETAS;
+        private System.Windows.Forms.Button btnExtension;
+        private System.Windows.Forms.Button btnConnector;
+        private System.Windows.Forms.GroupBox gpbVB6;
+        private System.Windows.Forms.GroupBox gpbNet;
     }
 }

@@ -215,6 +215,9 @@ namespace InvConfig.Models
                 properties["NET_BonanzaPath"] = p_InvConfigModel.bnzServerPath;
             else
                 properties["NET_BonanzaPath"] = @"C:\Bonanza\BFM\";
+
+            if (properties.ContainsKey("INV_RUNAS64BIT"))
+                properties["INV_RUNAS64BIT"] = p_InvConfigModel.StartUpMSNetAs;
             #endregion PATH
 
             #region Database

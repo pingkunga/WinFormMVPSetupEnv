@@ -61,6 +61,16 @@ namespace InvConfig.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Administration_ {
+            get {
+                object obj = ResourceManager.GetObject("Administration ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bonanza Interface Server.
         /// </summary>
         public static string ConstBnziServer {
@@ -129,6 +139,60 @@ namespace InvConfig.Properties {
         public static string ConstSQLServer {
             get {
                 return ResourceManager.GetString("ConstSQLServer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 32 Bits.
+        /// </summary>
+        public static string ConstStart32bitsKey {
+            get {
+                return ResourceManager.GetString("ConstStart32bitsKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to N.
+        /// </summary>
+        public static string ConstStart32bitsValue {
+            get {
+                return ResourceManager.GetString("ConstStart32bitsValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 64 Bits.
+        /// </summary>
+        public static string ConstStart64bitsKey {
+            get {
+                return ResourceManager.GetString("ConstStart64bitsKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Y.
+        /// </summary>
+        public static string ConstStart64bitsValue {
+            get {
+                return ResourceManager.GetString("ConstStart64bitsValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AUTO.
+        /// </summary>
+        public static string ConstStartAutoKey {
+            get {
+                return ResourceManager.GetString("ConstStartAutoKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A.
+        /// </summary>
+        public static string ConstStartAutoValue {
+            get {
+                return ResourceManager.GetString("ConstStartAutoValue", resourceCulture);
             }
         }
         
@@ -253,6 +317,26 @@ namespace InvConfig.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap icuba3 {
+            get {
+                object obj = ResourceManager.GetObject("icuba3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icuba5 {
+            get {
+                object obj = ResourceManager.GetObject("icuba5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap icuba6 {
             get {
                 object obj = ResourceManager.GetObject("icuba6", resourceCulture);
@@ -365,6 +449,16 @@ namespace InvConfig.Properties {
         public static string MsgUnregisterDLL {
             get {
                 return ResourceManager.GetString("MsgUnregisterDLL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Operation {
+            get {
+                object obj = ResourceManager.GetObject("Operation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

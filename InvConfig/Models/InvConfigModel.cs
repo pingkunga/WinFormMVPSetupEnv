@@ -24,6 +24,9 @@ namespace InvConfig.Models
         public string bnzInterfacePort { get; set; }
         public string isIncludeRPTServer { get; set; }
         public string bnzRPTDatabaseName { get; set; }
+
+        public string StartUpMSNetAs { get; set; }
+
         public string bnzUpdatePath { get; set; }
         public string bnzInstallPath { get; set; }
         public string bnzLastUpdateScript { get; set; }

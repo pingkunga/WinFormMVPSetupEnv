@@ -43,6 +43,10 @@ namespace InvConfig.Views
         event Action StartService;
         event Action StopService;
         event Action OpenBUC;
+        event Action OpenOperation;
+        event Action OpenAdministration;
+        event Action OpenConnector;
+        event Action OpenExtension;
         #endregion TAB: Enviroment Setup
         //>>TAB: InvestReg
         #region TAB: InvestReg
@@ -108,6 +112,10 @@ namespace InvConfig.Views
         string WindowsPassword { get; set; }
         //service
         string[] InterfaceStatus { set; }
+
+        //Start Up App
+        Dictionary<string, object> StartupAppDataSource { set; }
+        string StartUpMSNetAs { get; set; }
         //Other
         Dictionary<string, object> DBTypeDataSource { set; }
         Dictionary<string, string> BaseRegistryDataSource { set; }
