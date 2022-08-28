@@ -31,7 +31,7 @@ namespace Helpers.Cryptography
                 if (string.IsNullOrEmpty(saltPassword))
                 {
                     //Operation salt ingredient
-                    return "Wealth-Bonanza Investment-DB-2004-09-06-Key";
+                    return "Health-Investment-DB-2004-09-06-Key";
                 }
                 else
                 {
