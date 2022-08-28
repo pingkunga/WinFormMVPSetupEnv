@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Bonanaza Investment Toolbox")]
+[assembly: AssemblyTitle("Investment Toolbox")]
 [assembly: AssemblyDescription("Bonanaza Investment Toolbox")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Wealth Management System Limited")]
-[assembly: AssemblyProduct("Bonanaza Investment Toolbox")]
+[assembly: AssemblyCompany("DebuggingSoft")]
+[assembly: AssemblyProduct("Investment Toolbox")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("Power by DebuggingSoft")]
 [assembly: AssemblyCulture("")]
